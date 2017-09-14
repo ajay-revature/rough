@@ -1,0 +1,899 @@
+<?php
+/*
+Plugin Name: Career Job Post 
+Plugin URI: www.revature.com
+Description:Career Job Plugin used for career Job Post
+Version: 1.0
+Author URI: http://www.revature.com
+Author: Ajay and Joon Park
+*/
+
+/** 
+ * Creating custom post type career Jobs
+ *
+ **/
+
+define('CAREERS_PLUGIN_DIR', plugin_dir_url(__FILE__));
+
+add_action('init', 'create_post_type_jobs' );
+function create_post_type_jobs() {
+	register_post_type('jobs', array(
+		'label' => 'Jobs',
+		'description' => '',
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'map_meta_cap' => true,
+		'capability_type' => 'post',
+		'hierarchical' => true,
+		
+		'rewrite' => array('slug' => 'jobs', 'with_front' => true),
+		'query_var' => true,
+		'supports' => array('title','editor','revisions','thumbnail','page-attributes'),
+		'labels' => array (
+			  'name' => 'Jobs',
+			  'singular_name' => 'Jobs',
+			  'menu_name' => 'Jobs',
+			  'add_new' => 'Add Jobs',
+			  'add_new_item' => 'Add Job',
+			  'edit' => 'Edit',
+			  'edit_item' => 'Edit Job',
+			  'new_item' => 'New Jobs',
+			  'view' => 'View Jobs',
+			  'view_item' => 'View Job',
+			  'search_items' => 'Search Jobs',
+			  'not_found' => 'No Jobs Found',
+			  'not_found_in_trash' => 'No Jobs Found in Trash',
+			  'parent' => 'Parent Job',
+		)
+	)); 
+}
+
+
+
+add_action('admin_menu', 'email_api');
+
+function email_api()
+{
+	add_submenu_page( 'edit.php?post_type=jobs', 'Import Job Template', 'Import Job Template', 'manage_options', 'import-job', 'import_job_template');
+}
+
+function import_job_template() 
+{ 
+ test_handle_post();
+ 
+?>
+        <h1>Import Job Desciption Template</h1>
+         <h2>Upload a File</h2>
+        <!-- Form to handle the upload - The enctype value here is very important -->
+        <form  method="post" enctype="multipart/form-data">
+                <input type='file' id='test_upload_pdf' name='test_upload_pdf'></input>
+                <?php submit_button('Upload') ?>
+        </form>
+		<?php
+}
+function wpse_141088_upload_dir( $dir ) {
+    return $dir=array(
+        'path'   =>dirname(__FILE__). '/uploads',
+        'url'    => $dir['baseurl'] . '/uploads',
+        
+    ) + $dir;
+	
+	
+}
+function test_handle_post(){
+        // First check if the file appears on the _FILES array
+        if(isset($_FILES['test_upload_pdf'])){
+		 $upload_dir = wp_upload_dir(); 
+		// var_dump($upload_dir);
+		  $upload_dir['baseurl'];
+		
+ 
+
+ 
+
+
+ add_filter( 'upload_dir', 'wpse_141088_upload_dir' );
+ $file_exit= dirname(__FILE__). '/uploads/'.$_FILES['test_upload_pdf']['name'];
+		 $_FILES['test_upload_pdf']['name'];
+
+		
+    $filename = $_FILES['test_upload_pdf']['name'];
+   $arrpop=array_pop(explode('.',$filename));
+   if(file_exists($file_exit))
+   {
+	   unlink($file_exit);
+   }
+if($arrpop=='php' && $filename=='job_description_template.php' && !file_exists($file_exit))
+
+{
+			   $uploaded=media_handle_upload('test_upload_pdf', 0);
+                // Error checking using WP functions
+                if(is_wp_error($uploaded)){
+                        echo "Error uploading file: " . $uploaded->get_error_message();
+                }else{
+                        echo "<b><h2><font style='color:green'>File upload successfuly!</font></h2></b>";
+
+                }
+				
+}
+else
+{
+ echo "<b><h2><font style='color:red'>Name of file should be job_description_template.php and  extension should be .php</font></h2></b>";	
+}
+}
+}
+
+add_action( 'init', 'add_custom_taxonomy_job');
+
+function add_custom_taxonomy_job() {
+ register_taxonomy('jobs_region', array('jobs'), array(
+     'labels' => array(
+      'name' => _x( 'Jobs Category', 'taxonomy general name' ),
+     'singular_name' => _x( 'Jobs Category', 'taxonomy singular name' ),
+     'search_items' =>  __( 'Search Jobs Category' ),
+      'all_items' => __( 'All Jobs Category' ),
+      'parent_item' => __( 'Parent Jobs Category' ),
+     'parent_item_colon' => __( 'Parent Jobs Category:' ),
+      'edit_item' => __( 'Edit Jobs Category' ),
+     'update_item' => __( 'Update Jobs Category' ),
+      'add_new_item' => __( 'Add New Jobs Category' ),
+      'new_item_name' => __( 'New Jobs Category Name' ),
+      'menu_name' => __( 'Jobs Category' ),
+    ),
+   // Control the slugs used for this taxonomy
+      'rewrite' => array('slug' => 'jobs'), 
+      'with_front' => false, 
+      'show_admin_column' => true,
+      'hierarchical' => true 
+	  
+ 
+  ));
+} 
+
+
+/** 
+ * Add the custom metabox for mobile and other featured images
+ *
+ **/
+
+add_action('admin_init', 'mobile_and_other_image_jobs');
+ 
+function mobile_and_other_image_jobs() {
+    $post_types = array( 'jobs');
+	foreach ( $post_types as $post_type ) {
+        add_meta_box('jobs_display_meta_info', __('Display Job post area', 'textdomain'),'jobs_display_meta_info',$post_type,'normal','high');
+		 // Define the custom attachment for posts
+    }
+    foreach ( $post_types as $post_type ) {
+        add_meta_box('jobs_meta_info', __('Job Description', 'textdomain'),'jobs_meta_info',$post_type,'normal','high');
+		 // Define the custom attachment for posts
+    }
+	foreach ( $post_types as $post_type ) {
+        add_meta_box('jobs_seo_meta_info', __('Search Engine Listing(SEO) for Job Listing ', 'textdomain'),'jobs_seo_meta_info',$post_type,'normal','high');
+		 // Define the custom attachment for posts
+    }
+}
+
+/** 
+ *  custom meta box display
+ *
+ **/
+
+
+add_action('admin_enqueue_scripts', 'careers_callback_enqueue_scripts');
+
+function careers_callback_enqueue_scripts(){
+    wp_enqueue_script( 'jquery-ui', plugin_dir_url(__FILE__)."js/jquery-ui.js" );
+    wp_enqueue_style( 'jquery-ui-css', plugin_dir_url(__FILE__)."js/jquery-ui.css" );
+	wp_enqueue_script( 'jquery-ui-timepicker-addon-js', plugin_dir_url(__FILE__)."js/jquery-ui-timepicker-addon.js" );
+    wp_enqueue_style( 'jquery-ui-timepicker-addon-css', plugin_dir_url(__FILE__)."js/jquery-ui-timepicker-addon.css" );
+}
+
+add_action('admin_footer', 'action_date');
+function action_date(){
+    ?>
+        <script type="text/javascript">
+            jQuery(function() {
+              jQuery( "#jobs_start_date" ).datetimepicker({
+                    timeInput: true,
+                    dateFormat: "d M",
+                    timeFormat: "hh:mm tt",
+                    minDate: 0,
+                    onSelect: function (selected) {
+                                    jQuery("#jobs_end_date").datepicker("option","minDate", selected);
+                                }
+              });
+
+              jQuery( "#jobs_end_date" ).datetimepicker({
+                    timeInput: true,
+                    dateFormat: "d M",
+                    timeFormat: "hh:mm tt",
+                    onSelect: function (selected) {
+                                    jQuery("#jobs_start_date").datepicker("option", "maxDate", selected);
+                                 }
+              });
+            });
+        </script>
+<?php
+}
+function jobs_display_meta_info($post)
+
+{
+
+	global $post;
+	$meta_checkbox=get_post_meta( $post->ID, 'meta_checkbox', true );
+?>
+	
+	<input type="checkbox" name="meta_checkbox" value="yes" <?php echo (($meta_checkbox=='yes') ? 'checked="checked"': '');?>/> Check for showing job post
+<?php
+}
+ 
+
+add_action('save_post', 'save_featured_post'); 
+function save_featured_post($post_id){ 
+	update_post_meta( $post_id, 'meta_checkbox', $_POST['meta_checkbox']);
+}
+?>
+<?php
+//------------------------------------ Start ----------------------------------------------//
+function jobs_seo_meta_info($post)
+{
+	 global $post;
+	
+	//retrieve the metadata values if they exist
+	
+    $jobs_meta_title = get_post_meta( $post->ID, 'jobs_meta_title', true );
+    $jobs_meta_description = get_post_meta( $post->ID, 'jobs_meta_description', true );
+	$jobs_meta_keywords = get_post_meta( $post->ID, 'jobs_meta_keywords', true );
+ 
+    // Add an nonce field so we can check for it later when validating
+	
+    wp_nonce_field( 'tes_inner_custom_box', 'tes_inner_custom_box_nonce' );
+ 
+    echo '<div class="form-field form-required">
+                    <label for="jobs_department">Title Tag:</label>
+                    <br/>
+                    <input style="padding: 6px 4px; width: 300px" type="text" name="jobs_meta_title" value="'. esc_attr($jobs_meta_title) . '" />
+                </div>
+      <div class="form-field form-required">
+	      <label for="jobs_department">Meta Description:</label>
+                    <br/>
+             <textarea  rows="3" cols="50" name="jobs_meta_description">' . esc_attr($jobs_meta_description) . '</textarea>
+        </div>
+		 <div class="form-field form-required">
+	      <label for="jobs_department">Meta Keywords:(keywords should be seperate with comma(","))</label>
+                    <br/>
+             <textarea  rows="3" cols="50" name="jobs_meta_keywords">' . esc_attr($jobs_meta_keywords) . '</textarea>
+        </div>';
+}
+
+function tes_mb_save_data($post_id) {
+ 
+  global $post;
+    /*
+     * We need to verify this came from the our screen and with proper authorization,
+     * because save_post can be triggered at other times.
+     */
+ 
+    // Check if our nonce is set.
+    if ( ! isset( $_POST['tes_inner_custom_box_nonce'] ) )
+        return $post_id;
+ 
+    $nonce = $_POST['tes_inner_custom_box_nonce'];
+ 
+    // Verify that the nonce is valid.
+    if ( ! wp_verify_nonce( $nonce, 'tes_inner_custom_box' ) )
+        return $post_id;
+ 
+    // If this is an autosave, our form has not been submitted, so we don't want to do anything.
+    if ( defined( 'DOING_AUTOSAVE') && DOING_AUTOSAVE )
+        return $post_id;
+ 
+    // Check the user's permissions.
+    if ( 'page' == $_POST['post_type'] ) {
+ 
+        if ( ! current_user_can( 'edit_page', $post_id ) )
+            return $post_id;
+    } else {
+ 
+        if ( ! current_user_can( 'edit_post', $post_id ) )
+            return $post_id;
+    }
+ 
+    /* OK, its safe for us to save the data now. */
+ 
+    // If old entries exist, retrieve them
+    $old_title =  get_post_meta( $post_id, 'jobs_meta_title', true );
+    $old_description = get_post_meta( $post_id, 'jobs_meta_description', true );
+     $old_keywords =   get_post_meta( $post->ID, 'jobs_meta_keywords', true );
+    // Sanitize user input.
+    $title = sanitize_text_field( $_POST['jobs_meta_title'] );
+    $description = sanitize_text_field( $_POST['jobs_meta_description'] );
+	$keywords = sanitize_text_field( $_POST['jobs_meta_keywords'] );
+ 
+    // Update the meta field in the database.
+    update_post_meta( $post_id, 'jobs_meta_title', $title, $old_title );
+    update_post_meta( $post_id, 'jobs_meta_description', $description, $old_description );
+	update_post_meta( $post_id, 'jobs_meta_keywords', $keywords, $old_keywords );
+}
+add_action( 'save_post', 'tes_mb_save_data' );
+function tes_mb_display() {
+ 
+    global $post;
+     
+ // retrieve the metadata values if they exist
+    $jobs_meta_title = get_post_meta( $post->ID, 'jobs_meta_title', true );
+    $jobs_meta_description = get_post_meta( $post->ID, 'jobs_meta_description', true );
+	 $jobs_meta_keywords = get_post_meta( $post->ID, 'jobs_meta_keywords', true );
+
+    echo ' <meta property="og:title" content="' . $jobs_meta_title . '" />
+    <meta property="og:description" content="' . $jobs_meta_description . '" />
+    <meta name="description"  content="' . $jobs_meta_description . '" />
+	<meta name="keywords"     content="' . $jobs_meta_keywords . '" >
+   
+    ';
+}
+add_action( 'wp_head', 'tes_mb_display' );
+
+   //------------------------------------ End ----------------------------------------------//
+   
+function jobs_meta_info($post) {
+    global $post;
+   
+            
+	//var_dump($meta_checkbox);
+	$jobs_start_date    = get_post_meta($post->ID, "_jobs_start_date", true ); 
+	$jobs_end_date      = get_post_meta($post->ID, "_jobs_end_date", true ); 
+	$jobs_work_location = get_post_meta($post->ID, "jobs_work_location", true); 
+	$jobs_department    = get_post_meta($post->ID, "jobs_department", true ); 
+	$jobs_country       = get_post_meta($post->ID, "jobs_country", true ); 
+	$jobs_responsibility = get_post_meta($post->ID, "jobs_responsibility", true);
+	$jobs_requirement = get_post_meta($post->ID, "jobs_requirement", true);
+	$jobs_preferred = get_post_meta($post->ID, "jobs_preferred", true);
+	$jobs_crawled_text = get_post_meta($post->ID, "jobs_crawled_text", true);
+	
+	?>
+                
+				
+                <div class="form-field form-required">
+                    <label for="jobs_country">Country</label><br/>
+                    <input type="text" id="jobs_country" name="jobs_country" value="<?php echo $jobs_country; ?>" />
+                </div>
+                    
+                    
+               
+                <br/>
+				 <div class="form-field form-required">
+                    <label for="jobs_work_location">Work Location</label><br/>
+                    <input type="text" id="jobs_work_location" name="jobs_work_location" value="<?php echo $jobs_work_location; ?>" />
+                </div>
+                <br/>
+				 <div class="form-field form-required">
+                    <label for="jobs_department">Department</label>
+                    <br/>
+                    <input type="text" id="jobs_department" name="jobs_department" value="<?php echo $jobs_department; ?>" />
+                </div>
+				 <div class="form-field form-required">
+                    <label for="jobs_department">Requirement</label>
+                    <br/>
+                    <input type="text" id="jobs_requirement" name="jobs_requirement" value="<?php echo $jobs_requirement; ?>" />
+                </div>
+				 <div class="form-field form-required">
+                    <label for="jobs_department">Responsibilities</label>
+                    <br/>
+                    <input type="text" id="jobs_responsibility" name="jobs_responsibility" value="<?php echo $jobs_responsibility; ?>" />
+                </div>
+				 <div class="form-field form-required">
+                    <label for="jobs_department">Preferred</label>
+                    <br/>
+                    <input type="text" id="jobs_preferred" name="jobs_preferred" value="<?php echo $jobs_preferred; ?>" />
+                </div>
+                <br/>
+				 <div class="form-field form-required">
+                    <label for="jobs_department">Crawled Text</label>
+                    <br/>
+                    <input type="text" id="jobs_crawled_text" name="jobs_crawled_text" value="<?php echo $jobs_crawled_text; ?>" />
+                </div>
+                <br/>
+                <div class="form-field form-required">
+                    <label for="jobs_start_date">Start Date</label>
+                    <br/>
+                    <input type="text" id="jobs_start_date" style="width: 450px;" name="jobs_start_date" value="<?php echo $jobs_start_date; ?>" />
+                </div>
+                <br/>
+                <div class="form-field form-required">
+                    <label for="jobs_end_date">End Date</label>
+                    <br/>
+                    <input type="text" id="jobs_end_date" style="width: 450px;" name="jobs_end_date" value="<?php echo $jobs_end_date; ?>" />
+                </div>
+                <br/>
+                
+               
+                
+	<?php 
+} 
+
+
+/** 
+ * Save Data custom fields
+ *
+ **/
+ 
+add_action('save_post', 'jobs_save_custom_meta_data');
+ 
+function jobs_save_custom_meta_data() {
+	global $post;
+			echo $_POST["meta_checkbox"];
+			echo $_POST["jobs_department"];
+    update_post_meta($post->ID, "meta_checkbox", $_POST["meta_checkbox"]);	
+	
+	update_post_meta($post->ID, "jobs_department", $_POST["jobs_department"]); 
+	update_post_meta($post->ID, "jobs_country", $_POST["jobs_country"]); 
+	update_post_meta($post->ID, "_jobs_start_date", $_POST["jobs_start_date"]); 
+	update_post_meta($post->ID, "_jobs_end_date", $_POST["jobs_end_date"]); 
+	
+	update_post_meta($post->ID, "jobs_work_location", $_POST["jobs_work_location"]);
+    update_post_meta($post->ID, "jobs_responsibility", $_POST["jobs_responsibility"]); 	
+	update_post_meta($post->ID, "jobs_requirement", $_POST["jobs_requirement"]); 
+	update_post_meta($post->ID, "jobs_preferred", $_POST["jobs_preferred"]); 	
+	update_post_meta($post->ID, "jobs_crawled_text", $_POST["jobs_crawled_text"]); 	
+
+}
+
+
+function jobs_update_edit_form() {
+    echo ' enctype="multipart/form-data"';
+} 
+add_action('post_edit_form_tag', 'jobs_update_edit_form');
+
+
+function jobs_all_posts(){
+	
+ 	echo $paged=$_POST['page'];
+	$argsjobs = array(
+		'paged' => $paged,
+		'orderby'    => 'post_date',
+		'order'             => 'DESC',
+	    'meta_key' => 'meta_checkbox',
+	    'meta_value' => 'yes',
+		'post_type'         => 'jobs',
+		'post_status'       => 'publish'
+	);	
+     $the_query = new WP_Query( $argsjobs );  
+	 
+	 
+	$jobs_posts = get_posts( $argsjobs );
+	
+        if(count($jobs_posts) > 0){
+	?>
+	<section class="blog-articals" id="benefits">
+
+      <div class="container">
+            
+                                <?php
+                                    foreach($jobs_posts as $post){
+                                    setup_postdata($post);
+                                    
+                                 $meta_checkbox     = get_post_meta($post->ID, "meta_checkbox", true )? get_post_meta($post->ID, "meta_checkbox", true ): "Not Mentioned";									
+                                    $jobs_department     = get_post_meta($post->ID, "jobs_department", true )? get_post_meta($post->ID, "jobs_department", true ): "Not Mentioned"; 
+                                    $jobs_country       = get_post_meta($post->ID, "jobs_country", true )? get_post_meta($post->ID, "jobs_country", true ): "Not Mentioned"; 
+                                    $jobs_start_date    = get_post_meta($post->ID, "_jobs_start_date", true )? get_post_meta($post->ID, "_jobs_start_date", true ): "Not Mentioned"; 
+                                    $jobs_end_date      = get_post_meta($post->ID, "_jobs_end_date", true )? get_post_meta($post->ID, "_jobs_end_date", true ): "Not Mentioned"; 
+                                    $jobs_work_location = get_post_meta($post->ID, "jobs_work_location", true)? get_post_meta($post->ID, "jobs_work_location", true ): "Not Mentioned";
+									$jobs_responsibility = get_post_meta($post->ID, "jobs_responsibility", true)? get_post_meta($post->ID, "jobs_responsibility", true ): "Not Mentioned";
+									$jobs_requirement = get_post_meta($post->ID, "jobs_requirement", true)? get_post_meta($post->ID, "jobs_requirement", true ): "Not Mentioned";
+									$jobs_preferred = get_post_meta($post->ID, "jobs_preferred", true)? get_post_meta($post->ID, "jobs_preferred", true ): "Not Mentioned";
+                                         ?>
+                                           
+											
+
+         <div class="row no-margin news_list">
+
+  
+   <div class="col-lg-12 col-md-12 col-sm-12 blog-bottom-border">
+
+                <h3 class="margin-bottom-25"><?php echo $post->post_title; ?></h3>
+
+                 <div class=""><b><?php echo $jobs_department; ?></b><span class="">|</span><b><?php echo $jobs_work_location; ?>,<?php echo $jobs_country; ?></b></div>
+
+                    <?php if(($post->post_content)!="")
+				{
+					?>
+				  <div class="blog-post-single">
+				  <p class="career-paragraph">
+			         <?php  echo get_the_excerpt();	?>
+					 </p>
+					 </div>
+                
+				<?php
+				     }
+				  else
+				   {
+				   ?>
+				<p>We are looking for a passionate <?php echo $post->post_title; ?> to join our team. Don't miss this exciting opportunity!&nbsp; Start the Ultimate Tech Career with a job as an <?php echo $post->post_title; ?> at Revature, where you will learn the latest technologies and work at some of the most respected organizations in <?php echo $jobs_work_location; ?>, <?php echo $jobs_country; ?> </p>
+<?php 
+				   }
+				?>
+                
+
+                   <a href="<?php echo  get_permalink($post->ID) ?>" class="orange-invert-btn margin-top-25 margin-bottom-25">READ MORE<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+               </div>
+
+   </div> <!-- end blog posts -->	
+											
+    	
+  
+                                        <?php
+                                    }
+                                    wp_reset_postdata();
+                                ?>
+</div>
+  
+  </section>
+
+		                           
+            <?php
+        } else{
+            ?><section class="blog-articals" id="benefits">
+
+      <div class="container">
+                <h4 class="careers-no-jobs">Sorry! Currently No Jobs in <?php echo ucwords(str_replace("-", " ", $region)); ?>!</h4>
+                </div>
+  
+  </section>
+ 
+				<?php
+            }
+        }
+
+
+function jobs_single_post($postid){
+        global $post;
+	$jobs_post = get_post( $postid );
+        
+        $jobs_department     = get_post_meta($post->ID, "jobs_department", true )? get_post_meta($post->ID, "jobs_department", true ): "Not Mentioned"; 
+        $jobs_country       = get_post_meta($post->ID, "jobs_country", true )? get_post_meta($post->ID, "jobs_country", true ): "Not Mentioned"; 
+        $jobs_start_date    = get_post_meta($post->ID, "_jobs_start_date", true )? get_post_meta($post->ID, "_jobs_start_date", true ): "Not Mentioned"; 
+        $jobs_end_date      = get_post_meta($post->ID, "_jobs_end_date", true )? get_post_meta($post->ID, "_jobs_end_date", true ): "Not Mentioned"; 
+         $jobs_work_location = get_post_meta($post->ID, "jobs_work_location", true)? get_post_meta($post->ID, "jobs_work_location", true ): "Not Mentioned";
+		 $jobs_responsibility = get_post_meta($post->ID, "jobs_responsibility", true)? get_post_meta($post->ID, "jobs_responsibility", true ): "Not Mentioned";
+		 $jobs_requirement = get_post_meta($post->ID, "jobs_requirement", true)? get_post_meta($post->ID, "jobs_requirement", true ): "Not Mentioned";
+		$jobs_preferred = get_post_meta($post->ID, "jobs_preferred", true)? get_post_meta($post->ID, "jobs_preferred", true ): "Not Mentioned";
+		$jobs_crawled_text = get_post_meta($post->ID, "jobs_crawled_text", true)? get_post_meta($post->ID, "jobs_crawled_text", true ): "Not Mentioned";
+                                
+         ?>
+		 <section class="career-articals" id="benefits">
+      <div class="container">
+         <div class="row no-margin">
+              <div class="col-lg-8 col-md-8 col-sm-12 blog-bottom-border">
+                <h3 class="margin-bottom-25" id="JobTitle"><?php echo $jobs_post->post_title; ?></h3>
+                 <div class="row">
+                     <div class="col-lg-8 col-md-8 col-xs-12 ">
+                          <div class="pull-left location-text-align-center"><b><?php echo $jobs_work_location; ?></b></div>
+                     </div>
+                     <div class="col-lg-4 col-md-4 col-xs-12">
+                        <div class="share pull-left padding-top-10 mobile-share"><b>Share</b></div><div class="share pull-left"><span class=""><?php   echo do_shortcode('[addtoany]'); ?>
+                             </span></div>
+                     </div>
+                     <div class="clear"></div>
+                     
+                 </div>
+				 
+                    <?php if(($jobs_post->post_content)!="")
+				{
+					?>
+				  <div class="blog-post-single">
+				 <p class="career-paragraph">
+				 <p style="color:#fff;"><?php echo $jobs_crawled_text; ?></p>
+			         <?php echo apply_filters('the_content', $jobs_post->post_content); ?></p> 
+					  </p>
+					 </div>
+                
+				<?php
+				     }
+				  else
+				   {
+				
+
+				?>
+				
+					 <div class="blog-post-single">
+				
+			        <?php  include(plugin_dir_path( __FILE__ ) . '/uploads/job_description_template.php');?>
+
+					 </div>
+				<?php }
+                    	?>
+					
+			   </div>
+                 <div class="col-lg-4 col-md-4 col-sm-12 blog-bottom-border" id="contactFormContainer">
+                           
+                <div class="col-xs-12">
+                    <h4 id="careerFormTitle">Quick Apply</h4>
+                </div>
+                <div class="row form-label-txt">
+                    <form id="career-apply-form" method="post" target="confirmFrame" action="https://qa2.revature.com/contactus" enctype="multipart/form-data">
+                        <div class="col-lg-12 col-xs-12 form-group">
+							<label class="control-label" for="FirstName">First Name*</label>
+                            <input class="shortfield-home form-control" type="text" name="FirstName" id="FirstName" placeholder="First name" maxlength="50" required/>
+							<span id="nameHelp" class="help-block" style="display:none;">Please enter first name.</span>
+                        </div>
+						<div class="col-lg-12 col-xs-12 form-group">
+						<label class="control-label" for="LastName">Last Name*</label>
+                            <input class="shortfield-home form-control" type="text" name="LastName" id="LastName"  placeholder="Last name" maxlength="50" required/>
+							<span id="nameHelp" class="help-block" style="display:none;">Please enter last name.</span>
+                        </div>
+						<div class="col-lg-12 col-xs-12 form-group">
+						<label class="control-label" for="Email">Email*</label>
+                            <input class="shortfield-home form-control"  type="email" name="Email" placeholder="Email" id="Email" maxlength="50" required/>
+							<span id="emailHelp" class="help-block" style="display:none;">Please enter a valid email address.</span>
+                        </div>
+						<div class="col-lg-12 col-xs-12 form-group inline-no-padding" id="PhoneGroup">
+						<label class="control-label col-xs-12 text-left" for="Phone1">Phone*</label>
+							<div class="col-xs-4">
+							<input class="shortfield-home form-control phone" type="text" name="Phone1" id="Phone1" maxlength="3" size="3"/>
+							</div>
+							<div class="col-xs-4">
+							<input class="shortfield-home form-control phone" type="text" name="Phone2" id="Phone2" maxlength="3" size="3"/>
+							</div>
+							<div class="col-xs-4">
+							<input class="shortfield-home form-control phone" type="text" name="Phone3" id="Phone3" maxlength="4" size="4"/>
+							</div>
+							<div class="col-xs-12">
+							<span class="help-block" id="PhoneHelp" style="display:none;">Please enter a contact phone number.</span>
+							</div>
+						</div>
+							<div class="col-lg-12 col-xs-12 form-group inline-no-padding">
+							<label class="control-label col-xs-12 text-left" for="GraduationMonth">Graduation Date*</label>
+							<div class="col-xs-6">
+												<select class="shortfield-home form-control col-xs-6" id="GraduationMonth" name="GraduationMonth" required>
+												<option value=""></option>
+												<option value="12-01">Fall</option>
+												<option value="05-01">Spring</option>
+												<option value="07-01">Summer</option>
+												</select>
+												<span class="help-block" id="GraduationSemesterHelp" style="display:none;">Please select the Semester of your Graduation</span>
+							</div>
+							<div class="col-xs-6">
+												<span class="input-group-btn" style="width:0px;"></span>
+												<select class="shortfield-home form-control col-xs-6" id="GraduationYear" name="GraduationYear">
+												<option value="2000">2000</option>
+												<option value="2001">2001</option>
+												<option value="2002">2002</option>
+												<option value="2003">2003</option>
+												<option value="2004">2004</option>
+												<option value="2005">2005</option>
+												<option value="2006">2006</option>
+												<option value="2007">2007</option>
+												<option value="2008">2008</option>
+												<option value="2009">2009</option>
+												<option value="2010">2010</option>
+												<option value="2011">2011</option>
+												<option value="2012">2012</option>
+												<option value="2013">2013</option>
+												<option value="2014">2014</option>
+												<option value="2015">2015</option>
+												<option value="2016">2016</option>
+												<option value="2017">2017</option>
+												<option value="2018">2018</option>
+												<option value="2019">2019</option>
+												<option value="2020">2020</option>
+												<option value="2021">2021</option>
+												<option value="2022">2022</option>
+												<option value="2023">2023</option>
+												<option value="2024">2024</option>
+												<option value="2025">2025</option>
+												<option value="2026">2026</option>
+												</select>
+							</div>
+                        </div>
+                        <div class="col-lg-12 col-xs-12 form-group">
+						<label class="control-label" for="Relocate">Willing to Relocate?*</label>
+                              <select class="shortfield-home form-control" name="Relocate" id="Relocate" required>
+								<option value=""></option>
+                                <option value="yes">Yes</option>
+								<option value="no">No</options>
+                            </select>
+							<span class="help-block" style="display:none;">Please select an option.</span>
+                        </div>
+                        <div class="col-lg-12 col-xs-12 form-group">
+						<label class="control-label" for="WorkAuthorization">Work Authorization*</label>
+                              <select class="shortfield-home form-control" name="WorkAuthorization" id="WorkAuthorization" required>
+								<option value=""></option>
+                                <option value="U.S. Citizen">U.S. Citizen</option>
+								<option value="Green Card">Green Card</options>
+								<option value="OPT">OPT</options>
+								<option value="Other Visa">Other Visa</options>
+                            </select>
+							<span class="help-block" style="display:none;">Please select an option.</span>
+                        </div>
+						<div class="col-xs-12 form-group">
+						<label class="control-label">Resume*</label><br>
+						<input type="file" id="ResumeUpload" name="ResumeUpload" class="filestyle" data-buttonBefore="true" data-buttonName="Orange-read-btn btn-lg" data-icon="false" required>
+					    <span id="fileHelp" class="help-block" style="display:none;">Please select a file to upload (pdf, docx, doc, rtf, txt).</span>
+						<input type="hidden" name="FileBase64" id="FileBase64"/>
+						<input type="hidden" name="FileExt" id="FileExt"/>
+						</div>
+                        <div class="col-lg-12 col-xs-12 text-center">
+							<span class="white-background-orange-text-btn" id="contactSubmit"><input type="submit" value="SUBMIT"/><i class="fa fa-angle-right"></i></span>
+							<img id="loading" style="display:none;" src="'.get_template_directory_uri().'/imgs/ajax-loader.gif"></img>
+							<span class="help-block" style="display:none;" id="confirmMsg">There was an issue with your submission, please try again.</span>
+                        </div>
+                    </form>
+                </div>
+                        <script src="//app-sj20.marketo.com/js/forms2/js/forms2.min.js"></script>
+<form id="mktoForm_1137" style="display:none;"></form>
+<script>MktoForms2.loadForm("//app-sj20.marketo.com", "733-JWE-559", 1137);</script>
+               </div>
+                
+               
+               
+                
+                 <div class="clear"></div>
+              
+         
+         </div>
+     </div>
+	 			<iframe id="confirmFrame" name="confirmFrame" style="display:none;">
+			</iframe>
+</section>
+
+        <?php
+    }
+
+	function jobs_view_posts(){
+	
+	
+                              
+                                 echo    $jobs_department     = get_post_meta($post->ID, "jobs_department", true )? get_post_meta($post->ID, "jobs_department", true ): "Not Mentioned"; 
+                                    $jobs_country       = get_post_meta($post->ID, "jobs_country", true )? get_post_meta($post->ID, "jobs_country", true ): "Not Mentioned"; 
+                                    $jobs_start_date    = get_post_meta($post->ID, "_jobs_start_date", true )? get_post_meta($post->ID, "_jobs_start_date", true ): "Not Mentioned"; 
+                                    $jobs_end_date      = get_post_meta($post->ID, "_jobs_end_date", true )? get_post_meta($post->ID, "_jobs_end_date", true ): "Not Mentioned"; 
+                                    $jobs_work_location = get_post_meta($post->ID, "jobs_work_location", true)? get_post_meta($post->ID, "jobs_work_location", true ): "Not Mentioned";
+									$jobs_responsibility = get_post_meta($post->ID, "jobs_responsibility", true)? get_post_meta($post->ID, "jobs_responsibility", true ): "Not Mentioned";
+									$jobs_requirement = get_post_meta($post->ID, "jobs_requirement", true)? get_post_meta($post->ID, "jobs_requirement", true ): "Not Mentioned";
+									$jobs_preferred = get_post_meta($post->ID, "jobs_preferred", true)? get_post_meta($post->ID, "jobs_preferred", true ): "Not Mentioned";
+                                         ?>
+                                           
+											
+
+ 
+
+ 
+				<?php
+            
+        }
+function career_search_filter($jobs_limit = -1){
+	$argsjobs = array(
+		'posts_per_page'    => 1000,
+		'orderby'           => 'post_date',
+		'order'             => 'DESC',
+	    'category'=>'career',
+		'meta_key' => 'meta_checkbox',
+	    'meta_value' => 'yes',
+		'post_type'         => 'jobs',
+		'post_status'       => 'publish'
+	);	
+        
+	$jobs_posts = get_posts( $argsjobs );
+        if(count($jobs_posts) > 0){
+	?>
+	
+<script type="text/javascript">
+$( document ).ready(function() {
+var code = {};
+$("select[name='Location'] > option,select[name='Department'] > option").each(function () {
+	
+	
+    if(code[this.text]) {
+        $(this).remove();
+    } else {
+        code[this.text] = this.value;
+    }
+});
+});
+</script>
+
+            <section class="career-filter-result">
+            <form id="" method="get" target="" action="http://localhost/rough/career-page/">
+			           
+                <div class="container">
+                   <div class="row">
+				   <div class="col-lg-2 col-md-2 col-xs-12">
+                  <div class="filter-result-text">Filter Results</div>  
+                   </div>
+                  <div class="col-lg-4 col-md-4 col-xs-12 form-group">
+				
+                                   <select style="width:100%;" class="form-control career-filter-result-field filter-padding" placeholder="Location" type="text" name="Location" id="Location" >
+									<option value="">Select Location</option>
+                                  									
+                                <?php
+                                    foreach($jobs_posts as $post){
+                                    setup_postdata($post);
+                                    
+                                    $jobs_department     = get_post_meta($post->ID, "jobs_department", true )? get_post_meta($post->ID, "jobs_department", true ): "Not Mentioned"; 
+                                    $jobs_country       = get_post_meta($post->ID, "jobs_country", true )? get_post_meta($post->ID, "jobs_country", true ): "Not Mentioned"; 
+                                    $jobs_start_date    = get_post_meta($post->ID, "_jobs_start_date", true )? get_post_meta($post->ID, "_jobs_start_date", true ): "Not Mentioned"; 
+                                    $jobs_end_date      = get_post_meta($post->ID, "_jobs_end_date", true )? get_post_meta($post->ID, "_jobs_end_date", true ): "Not Mentioned"; 
+                                    $jobs_work_location = get_post_meta($post->ID, "jobs_work_location", true)? get_post_meta($post->ID, "jobs_work_location", true ): "Not Mentioned";
+                                    $jobs_responsibility = get_post_meta($post->ID, "jobs_responsibility", true)? get_post_meta($post->ID, "jobs_responsibility", true ): "Not Mentioned";
+                                   $jobs_requirement = get_post_meta($post->ID, "jobs_requirement", true)? get_post_meta($post->ID, "jobs_requirement", true ): "Not Mentioned";
+									$jobs_preferred = get_post_meta($post->ID, "jobs_preferred", true)? get_post_meta($post->ID, "jobs_preferred", true ): "Not Mentioned";
+                                     									 
+									 ?>
+
+											<option value="<?php echo $jobs_work_location.'/'.$jobs_country?>"
+											<?php if($page_id == $post->ID){?> selected="selected"<?php } ?>>
+												<?php
+echo  $jobs_work_location;
+
+												?>
+											</option>
+   <?php
+                                    }
+                                    wp_reset_postdata();
+                                ?>										
+		</select>
+		<span id="locationHelp" class="help-block" style="display:none;">Please Select the Location.</span>
+		</div>
+		<div class="col-lg-4 col-md-4 col-xs-12 department-portion">
+                  
+                    <select style="width:100%;" class="form-control career-filter-result-field" placeholder="department" type="text" name="Department" id="Department"/>
+					<option value="">Select Department</option>
+					<?php
+                                    foreach($jobs_posts as $post){
+                                    setup_postdata($post);
+                                    
+                                    $jobs_department     = get_post_meta($post->ID, "jobs_department", true )? get_post_meta($post->ID, "jobs_department", true ): "Not Mentioned"; 
+                                    $jobs_country       = get_post_meta($post->ID, "jobs_country", true )? get_post_meta($post->ID, "jobs_country", true ): "Not Mentioned"; 
+                                    $jobs_start_date    = get_post_meta($post->ID, "_jobs_start_date", true )? get_post_meta($post->ID, "_jobs_start_date", true ): "Not Mentioned"; 
+                                    $jobs_end_date      = get_post_meta($post->ID, "_jobs_end_date", true )? get_post_meta($post->ID, "_jobs_end_date", true ): "Not Mentioned"; 
+                                    $jobs_work_location = get_post_meta($post->ID, "jobs_work_location", true)?   get_post_meta($post->ID, "jobs_work_location", true ): "Not Mentioned";
+                                    $jobs_responsibility = get_post_meta($post->ID, "jobs_responsibility", true)?     get_post_meta($post->ID, "jobs_responsibility", true ): "Not Mentioned";
+                                   $jobs_requirement = get_post_meta($post->ID, "jobs_requirement", true)? get_post_meta($post->ID, "jobs_requirement", true ): "Not Mentioned";
+									$jobs_preferred = get_post_meta($post->ID, "jobs_preferred", true)? get_post_meta($post->ID, "jobs_preferred", true ): "Not Mentioned";
+                                     									  
+									  ?>
+
+											<option value="<?php echo $jobs_department;?>"
+											<?php if($page_id == $post->ID){?> selected="selected"<?php } ?>>
+												<?php
+echo $jobs_department;
+
+												?>
+											</option>
+   <?php
+                                    }
+                                    wp_reset_postdata();
+                                ?>										
+		
+							</select>
+							<span id="departmentHelp" class="help-block" style="display:none;">Please Select the Department.</span>
+                   </div>
+				   <div class="col-lg-2 col-md-2 col-xs-12 ">
+				   <input  class="filter-submit-btn form-group" id="filterSubmit" value="FILTER" name="submit" style="color: rgb(242, 105, 37);" type="submit">
+				   </div>
+                   </div>
+                  
+                </div>
+            </form>
+
+       </section>
+		<?php if (function_exists("pagination")) {
+    pagination($custom_query->max_num_pages);
+} ?>
+                                     
+                        
+                
+            <?php
+        } else{
+            ?>
+                <h4 class="careers-no-jobs">Sorry! Currently No Jobs in <?php echo ucwords(str_replace("-", " ", $region)); ?>!</h4>
+                <?php
+            }
+        }
+		
+		
+	

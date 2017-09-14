@@ -1,0 +1,76 @@
+@media only screen and (max-width: 980px) and (min-width: 800px){
+	.hwd-steps{
+		height:875px;
+	}
+	.online-steps{
+		height:725px;
+	}
+	.hwd-steps.bootcamp-steps{
+		height:1000px;
+	}
+		.acd-par-steps{
+		height:750px;
+	}
+		.position_round_text_section_first
+{
+    position: absolute;
+left: -41px !important;
+top: -29px !important;
+
+}
+.position_round_text_section_second
+{
+	  
+   position: absolute;
+ right: -128px !important;
+top: 82px !important;
+
+
+
+}
+.position_round_text_section_third
+{
+	  
+     position: absolute;
+right: -68px !important;
+top: 205px !important;
+
+
+
+}
+.position_round_text_section_fourth
+{
+	       position: absolute;
+   right: -73px !important;
+bottom: 352px !important;
+
+
+
+
+
+
+}
+.position_round_text_section_fifth {
+ position: absolute;
+left: 159px !important;
+bottom: 227px !important;
+
+}
+
+.position_round_text_section_sixth
+{
+	 position: absolute;
+left: -44px !important;
+bottom: 151px !important;
+
+
+
+}
+.software_enigeer_section {
+    
+    top: 200px !important;
+    left: -44px !important;;
+    
+}
+	
+}

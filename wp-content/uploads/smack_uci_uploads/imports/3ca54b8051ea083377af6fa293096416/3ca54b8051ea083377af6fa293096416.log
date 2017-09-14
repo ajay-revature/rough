@@ -1,0 +1,9 @@
+ File has been used for this event: job_demo.csv - job_demo.csv (2).csv
+ Type of the imported file: csv
+ Revision of the which is used: 6
+ Mode of event: Insert
+ Total no of records: 2
+ Rows handled on each iterations (Based on your server configuration): 1
+ File used to import data into: jobs (jobs)
+[2017-08-25 02:59:47] Message: Inserted jobs ID: 1356,  Status: publish  Click here to verify - Web View | Admin View 
+[2017-08-25 02:59:53] Message: Inserted jobs ID: 1357,  Status: publish  Click here to verify - Web View | Admin View 

@@ -1,0 +1,4001 @@
+[ 
+{ 
+"value":1,
+"label":"Christopher Newport University"
+},
+{ 
+"value":2,
+"label":"George Mason University"
+},
+{ 
+"value":3,
+"label":"Northern Virginia Community College"
+},
+{ 
+"value":4,
+"label":"Old Dominion University"
+},
+{ 
+"value":5,
+"label":"Salisbury University"
+},
+{ 
+"value":6,
+"label":"Towson University"
+},
+{ 
+"value":7,
+"label":"University of Maryland-College Park"
+},
+{ 
+"value":8,
+"label":"University of Maryland-University College"
+},
+{ 
+"value":9,
+"label":"Virginia Commonwealth University"
+},
+{ 
+"value":10,
+"label":"West Virginia University"
+},
+{ 
+"value":11,
+"label":"Other"
+},
+{ 
+"value":12,
+"label":"Alabama Agricultural and Mechanical University"
+},
+{ 
+"value":13,
+"label":"Alabama State University"
+},
+{ 
+"value":14,
+"label":"Auburn University"
+},
+{ 
+"value":15,
+"label":"University of Alabama"
+},
+{ 
+"value":16,
+"label":"University of South Alabama"
+},
+{ 
+"value":17,
+"label":"Arizona State University-Tempe"
+},
+{ 
+"value":18,
+"label":"Arkansas State University "
+},
+{ 
+"value":19,
+"label":"Arkansas Tech University"
+},
+{ 
+"value":20,
+"label":"Associated Technical College"
+},
+{ 
+"value":21,
+"label":"California Polytechnic State University-Pomona"
+},
+{ 
+"value":22,
+"label":"California State University-Fullerton"
+},
+{ 
+"value":23,
+"label":"Stanford University"
+},
+{ 
+"value":24,
+"label":"University of California-Berkeley"
+},
+{ 
+"value":25,
+"label":"University of Redlands"
+},
+{ 
+"value":26,
+"label":"Sacred Heart University"
+},
+{ 
+"value":27,
+"label":"American University"
+},
+{ 
+"value":28,
+"label":"George Washington University"
+},
+{ 
+"value":29,
+"label":"University of Delaware"
+},
+{ 
+"value":30,
+"label":"Embry-Riddle Aeronautical University-Daytona Beach"
+},
+{ 
+"value":31,
+"label":"Florida Gulf Coast University"
+},
+{ 
+"value":32,
+"label":"Florida Institute of Technology"
+},
+{ 
+"value":33,
+"label":"Florida State University"
+},
+{ 
+"value":34,
+"label":"Full Sail University"
+},
+{ 
+"value":35,
+"label":"Seminole State College Of Florida"
+},
+{ 
+"value":36,
+"label":"University of Florida"
+},
+{ 
+"value":37,
+"label":"University of Miami"
+},
+{ 
+"value":38,
+"label":"University of West Florida"
+},
+{ 
+"value":39,
+"label":"Albany Technical College (GA)"
+},
+{ 
+"value":40,
+"label":"Altamaha Technical College"
+},
+{ 
+"value":41,
+"label":"Armstrong State University"
+},
+{ 
+"value":42,
+"label":"University of Georgia"
+},
+{ 
+"value":43,
+"label":"DePaul University"
+},
+{ 
+"value":44,
+"label":"Illinois Institute of Technology"
+},
+{ 
+"value":45,
+"label":"Loyola University Chicago"
+},
+{ 
+"value":46,
+"label":"Southern Illinois University-Carbondale"
+},
+{ 
+"value":47,
+"label":"Indiana University-Bloomington"
+},
+{ 
+"value":48,
+"label":"Purdue University"
+},
+{ 
+"value":49,
+"label":"University of Iowa"
+},
+{ 
+"value":50,
+"label":"Western Kentucky University"
+},
+{ 
+"value":51,
+"label":"Nicholls State University"
+},
+{ 
+"value":52,
+"label":"Southern University and A&M College"
+},
+{ 
+"value":53,
+"label":"Anne Arundel Community College"
+},
+{ 
+"value":54,
+"label":"Capitol College"
+},
+{ 
+"value":55,
+"label":"Frostburg State University"
+},
+{ 
+"value":56,
+"label":"Johns Hopkins University "
+},
+{ 
+"value":57,
+"label":"Maryville University"
+},
+{ 
+"value":58,
+"label":"University of Maryland-Baltimore County"
+},
+{ 
+"value":59,
+"label":"Boston University"
+},
+{ 
+"value":60,
+"label":"University of Massachusetts-Dartmouth"
+},
+{ 
+"value":61,
+"label":"Adrian College"
+},
+{ 
+"value":62,
+"label":"Andrews University"
+},
+{ 
+"value":63,
+"label":"Aquinas College"
+},
+{ 
+"value":64,
+"label":"Kettering University"
+},
+{ 
+"value":65,
+"label":"Wayne State University"
+},
+{ 
+"value":66,
+"label":"Montana State University-Bozeman"
+},
+{ 
+"value":67,
+"label":"Montclair State University"
+},
+{ 
+"value":68,
+"label":"New Jersey Institute of Technology"
+},
+{ 
+"value":69,
+"label":"Stevens Institute of Technology"
+},
+{ 
+"value":70,
+"label":"William Paterson University"
+},
+{ 
+"value":71,
+"label":"New Mexico Institute of Mining and Technology"
+},
+{ 
+"value":72,
+"label":"Appalachian State University"
+},
+{ 
+"value":73,
+"label":"North Carolina A&T State University"
+},
+{ 
+"value":74,
+"label":"University of North Carolina-Charlotte"
+},
+{ 
+"value":75,
+"label":"University of North Carolina-Wilmington"
+},
+{ 
+"value":76,
+"label":"Wake Forest University"
+},
+{ 
+"value":77,
+"label":"Western Carolina University"
+},
+{ 
+"value":78,
+"label":"Kent State University"
+},
+{ 
+"value":79,
+"label":"University of Oklahoma"
+},
+{ 
+"value":80,
+"label":"Art Institute of Pittsburgh"
+},
+{ 
+"value":81,
+"label":"Dickinson College"
+},
+{ 
+"value":82,
+"label":"Lehigh University"
+},
+{ 
+"value":83,
+"label":"Millersville University of Pennsylvania"
+},
+{ 
+"value":84,
+"label":"Shippensburg University of Pennsylvania"
+},
+{ 
+"value":85,
+"label":"University of Pittsburgh"
+},
+{ 
+"value":86,
+"label":"Aiken Technical College"
+},
+{ 
+"value":87,
+"label":"Coastal Carolina University"
+},
+{ 
+"value":88,
+"label":"University of South Carolina-Columbia"
+},
+{ 
+"value":89,
+"label":"South Dakota State University"
+},
+{ 
+"value":90,
+"label":"East Tennessee State University"
+},
+{ 
+"value":91,
+"label":"Tennessee State University"
+},
+{ 
+"value":92,
+"label":"Tennessee Technological University"
+},
+{ 
+"value":93,
+"label":"Abilene Christian University"
+},
+{ 
+"value":94,
+"label":"Angelo State University"
+},
+{ 
+"value":95,
+"label":"Art Instititute of Houston"
+},
+{ 
+"value":96,
+"label":"Texas A&M University-Commerce"
+},
+{ 
+"value":97,
+"label":"University of Dallas"
+},
+{ 
+"value":98,
+"label":"University of Houston–Clear Lake"
+},
+{ 
+"value":99,
+"label":"University of North Texas-Denton"
+},
+{ 
+"value":100,
+"label":"University of Texas-Pan American"
+},
+{ 
+"value":101,
+"label":"University of Texas-Arlington"
+},
+{ 
+"value":102,
+"label":"University of Texas-Dallas"
+},
+{ 
+"value":103,
+"label":"Western Governors University"
+},
+{ 
+"value":104,
+"label":"College of William and Mary"
+},
+{ 
+"value":105,
+"label":"James Madison University"
+},
+{ 
+"value":106,
+"label":"Marymount University"
+},
+{ 
+"value":107,
+"label":"Randolph College"
+},
+{ 
+"value":108,
+"label":"Roanoke College"
+},
+{ 
+"value":109,
+"label":"University of Virginia"
+},
+{ 
+"value":110,
+"label":"Virginia Polytechnic Institute and State University"
+},
+{ 
+"value":111,
+"label":"University of Wisconsin-Madison"
+},
+{ 
+"value":112,
+"label":"Test University"
+},
+{ 
+"value":113,
+"label":"Alcorn State University"
+},
+{ 
+"value":114,
+"label":"Andover College"
+},
+{ 
+"value":115,
+"label":"Astro University"
+},
+{ 
+"value":116,
+"label":"Villanova University"
+},
+{ 
+"value":117,
+"label":"Genesee Community College"
+},
+{ 
+"value":118,
+"label":"Western Oregon University"
+},
+{ 
+"value":119,
+"label":"Prairie View A&M University"
+},
+{ 
+"value":120,
+"label":"California State University-Fresno"
+},
+{ 
+"value":121,
+"label":"Longview Community College"
+},
+{ 
+"value":122,
+"label":"Marist College"
+},
+{ 
+"value":123,
+"label":"Skyline College"
+},
+{ 
+"value":124,
+"label":"Central Connecticut State University"
+},
+{ 
+"value":125,
+"label":"Northwestern State University"
+},
+{ 
+"value":126,
+"label":"Eastern Washington University"
+},
+{ 
+"value":127,
+"label":"Sonoma State University"
+},
+{ 
+"value":128,
+"label":"University of Nebraska-Lincoln"
+},
+{ 
+"value":129,
+"label":"Loughborough University"
+},
+{ 
+"value":130,
+"label":"Bethel College"
+},
+{ 
+"value":131,
+"label":"University of Southern Indiana"
+},
+{ 
+"value":132,
+"label":"United States Air Force Academy"
+},
+{ 
+"value":133,
+"label":"Lipscomb University"
+},
+{ 
+"value":134,
+"label":"University of South Florida-Sarasota-Manatee"
+},
+{ 
+"value":135,
+"label":"University of Hartford"
+},
+{ 
+"value":136,
+"label":"McNeese State University"
+},
+{ 
+"value":137,
+"label":"Washington University in Saint Louis"
+},
+{ 
+"value":138,
+"label":"Missouri College"
+},
+{ 
+"value":139,
+"label":"Metropolitan State University (MN)"
+},
+{ 
+"value":140,
+"label":"University of California-Santa Cruz"
+},
+{ 
+"value":141,
+"label":"Truman State University"
+},
+{ 
+"value":142,
+"label":"Broome Community College (NY)"
+},
+{ 
+"value":143,
+"label":"St. Mary's University-San Antonio"
+},
+{ 
+"value":144,
+"label":"National University"
+},
+{ 
+"value":145,
+"label":"American College of Technology"
+},
+{ 
+"value":146,
+"label":"Fayetteville Technical Community College"
+},
+{ 
+"value":147,
+"label":"San Jacinto College"
+},
+{ 
+"value":148,
+"label":"Washington State University-Pullman"
+},
+{ 
+"value":149,
+"label":"Seton Hall University"
+},
+{ 
+"value":150,
+"label":"New Hampshire Technical Institute"
+},
+{ 
+"value":151,
+"label":"Lake Sumter Community College-Leesburg"
+},
+{ 
+"value":152,
+"label":"Lander University"
+},
+{ 
+"value":153,
+"label":"University of Wisconsin-Whitewater"
+},
+{ 
+"value":154,
+"label":"State University of New York-New Paltz"
+},
+{ 
+"value":155,
+"label":"Evergreen State College"
+},
+{ 
+"value":156,
+"label":"Albany State University"
+},
+{ 
+"value":157,
+"label":"Campbell University"
+},
+{ 
+"value":158,
+"label":"Brooklyn College"
+},
+{ 
+"value":159,
+"label":"University of Phoenix"
+},
+{ 
+"value":160,
+"label":"Missouri Valley College"
+},
+{ 
+"value":161,
+"label":"Virginia Military Institute"
+},
+{ 
+"value":162,
+"label":"Norwich University"
+},
+{ 
+"value":163,
+"label":"California State University-Stanislaus"
+},
+{ 
+"value":164,
+"label":"Richmond Community College (NC)"
+},
+{ 
+"value":165,
+"label":"Bluegrass Community and Technical College"
+},
+{ 
+"value":166,
+"label":"University of Maine"
+},
+{ 
+"value":167,
+"label":"State University of New York-Oneonta"
+},
+{ 
+"value":168,
+"label":"Trinity Washington University"
+},
+{ 
+"value":169,
+"label":"Simpson College"
+},
+{ 
+"value":170,
+"label":"St. Norbert College"
+},
+{ 
+"value":171,
+"label":"Wiley College"
+},
+{ 
+"value":172,
+"label":"College of Wooster"
+},
+{ 
+"value":173,
+"label":"California State University-San Marcos"
+},
+{ 
+"value":174,
+"label":"St. Louis University"
+},
+{ 
+"value":175,
+"label":"California State University-San Bernadino"
+},
+{ 
+"value":176,
+"label":"Biola University"
+},
+{ 
+"value":177,
+"label":"Johnson C. Smith University"
+},
+{ 
+"value":178,
+"label":"Wabash College"
+},
+{ 
+"value":179,
+"label":"Moravian College"
+},
+{ 
+"value":180,
+"label":"College of the Canyons"
+},
+{ 
+"value":181,
+"label":"University of Chicago"
+},
+{ 
+"value":182,
+"label":"Christian Brothers University"
+},
+{ 
+"value":183,
+"label":"College of New Jersey"
+},
+{ 
+"value":184,
+"label":"Art Institute of Washington"
+},
+{ 
+"value":185,
+"label":"Gettysburg College"
+},
+{ 
+"value":186,
+"label":"Freed-Hardeman University"
+},
+{ 
+"value":187,
+"label":"The College of Saint Mary Magdalen"
+},
+{ 
+"value":188,
+"label":"Beal College"
+},
+{ 
+"value":189,
+"label":"Arkansas State University-Newport"
+},
+{ 
+"value":190,
+"label":"Unity College"
+},
+{ 
+"value":191,
+"label":"Oakwood University"
+},
+{ 
+"value":192,
+"label":"University of Hawaii-West Oahu"
+},
+{ 
+"value":193,
+"label":"Newbury College"
+},
+{ 
+"value":194,
+"label":"Portland State University"
+},
+{ 
+"value":195,
+"label":"Worcester State University"
+},
+{ 
+"value":196,
+"label":"Southeastern Oklahoma State University"
+},
+{ 
+"value":197,
+"label":"University of Guam (Guam)"
+},
+{ 
+"value":198,
+"label":"Southern Oregon University"
+},
+{ 
+"value":199,
+"label":"University of Southern Maine"
+},
+{ 
+"value":200,
+"label":"Casper College"
+},
+{ 
+"value":201,
+"label":"Saginaw Valley State University"
+},
+{ 
+"value":202,
+"label":"University of Maine-Augusta"
+},
+{ 
+"value":203,
+"label":"University of Mobile"
+},
+{ 
+"value":204,
+"label":"Western New Mexico University"
+},
+{ 
+"value":205,
+"label":"Spalding University"
+},
+{ 
+"value":206,
+"label":"Brescia University"
+},
+{ 
+"value":207,
+"label":"Laramie County Community College"
+},
+{ 
+"value":208,
+"label":"University of Hawaii-Hilo"
+},
+{ 
+"value":209,
+"label":"University of the Pacific"
+},
+{ 
+"value":210,
+"label":"Cedarville University"
+},
+{ 
+"value":211,
+"label":"University of South Carolina-Upstate"
+},
+{ 
+"value":212,
+"label":"Princeton University"
+},
+{ 
+"value":213,
+"label":"Midwestern State University"
+},
+{ 
+"value":214,
+"label":"University of Colorado-Colorado Springs"
+},
+{ 
+"value":215,
+"label":"Philander Smith College"
+},
+{ 
+"value":216,
+"label":"Southwest Tennessee Community College"
+},
+{ 
+"value":217,
+"label":"Polytechnic University of Puerto Rico"
+},
+{ 
+"value":218,
+"label":"Bennington College"
+},
+{ 
+"value":219,
+"label":"California State University-Dominguez Hills"
+},
+{ 
+"value":220,
+"label":"Berea College"
+},
+{ 
+"value":221,
+"label":"University of Wisconsin-Milwaukee"
+},
+{ 
+"value":222,
+"label":"Lewis and Clark College"
+},
+{ 
+"value":223,
+"label":"Washtenaw Community College"
+},
+{ 
+"value":224,
+"label":"York College (NY)"
+},
+{ 
+"value":225,
+"label":"Ivy Tech State College"
+},
+{ 
+"value":226,
+"label":"University of Michigan-Dearborn"
+},
+{ 
+"value":227,
+"label":"University of South Dakota"
+},
+{ 
+"value":228,
+"label":"Bismarck State College"
+},
+{ 
+"value":229,
+"label":"University of Central Arkansas"
+},
+{ 
+"value":230,
+"label":"Dalton State College"
+},
+{ 
+"value":231,
+"label":"Guilford Technical Community College"
+},
+{ 
+"value":232,
+"label":"St. Ambrose University"
+},
+{ 
+"value":233,
+"label":"California State University-Monterey Bay"
+},
+{ 
+"value":234,
+"label":"College of Staten Island"
+},
+{ 
+"value":235,
+"label":"Prince George Community College"
+},
+{ 
+"value":236,
+"label":"University of West Georgia"
+},
+{ 
+"value":237,
+"label":"Associated Technical College-Los Angeles"
+},
+{ 
+"value":238,
+"label":"Texas A&M University-Texarkana"
+},
+{ 
+"value":239,
+"label":"Johnson University"
+},
+{ 
+"value":240,
+"label":"University of Tennessee-Martin"
+},
+{ 
+"value":241,
+"label":"Broadview University"
+},
+{ 
+"value":242,
+"label":"Hendrix College"
+},
+{ 
+"value":243,
+"label":"DeVry University-Decatur Campus"
+},
+{ 
+"value":244,
+"label":"Mott Community College"
+},
+{ 
+"value":245,
+"label":"University of Wisconsin-Eau Claire"
+},
+{ 
+"value":246,
+"label":"DeVry University-Miami Center"
+},
+{ 
+"value":247,
+"label":"DeVry University-Ft. Lauderdale Center"
+},
+{ 
+"value":248,
+"label":"Sul Ross State University"
+},
+{ 
+"value":249,
+"label":"Virginia Western Community College"
+},
+{ 
+"value":250,
+"label":"Coleman University"
+},
+{ 
+"value":251,
+"label":"Canisius College"
+},
+{ 
+"value":252,
+"label":"Arkansas State University-Jonesboro"
+},
+{ 
+"value":253,
+"label":"Indiana University Kokomo"
+},
+{ 
+"value":254,
+"label":"Westwood College-Los Angeles"
+},
+{ 
+"value":255,
+"label":"Westwood College-Online Campus"
+},
+{ 
+"value":256,
+"label":"DeVry University-Orlando North (Maitland) Center"
+},
+{ 
+"value":258,
+"label":"ITT Technical Institute-Hanover (MD)"
+},
+{ 
+"value":259,
+"label":"DeVry University-Alhambra Center"
+},
+{ 
+"value":260,
+"label":"DeVry University-Fresno"
+},
+{ 
+"value":261,
+"label":"Stratford University-Falls Church (Tysons)"
+},
+{ 
+"value":262,
+"label":"Ohio Dominican University"
+},
+{ 
+"value":263,
+"label":"Lake Area Technical Institute"
+},
+{ 
+"value":264,
+"label":"University of Connecticut"
+},
+{ 
+"value":265,
+"label":"Murray State University"
+},
+{ 
+"value":266,
+"label":"Trenholm State-Trenholm"
+},
+{ 
+"value":267,
+"label":"Mansfield University of Pennsylvania"
+},
+{ 
+"value":268,
+"label":"John Brown University"
+},
+{ 
+"value":269,
+"label":"University of Maine-Fort Kent"
+},
+{ 
+"value":270,
+"label":"J.F. Drake State Community and Technical College"
+},
+{ 
+"value":271,
+"label":"University of Hawaii-Maui"
+},
+{ 
+"value":272,
+"label":"Germanna Community College-Fredericksburg"
+},
+{ 
+"value":273,
+"label":"Bates College"
+},
+{ 
+"value":274,
+"label":"University of New England"
+},
+{ 
+"value":275,
+"label":"Arkansas Tech University-Ozark Campus"
+},
+{ 
+"value":276,
+"label":"Whitworth University"
+},
+{ 
+"value":277,
+"label":"Kentucky Wesleyan College"
+},
+{ 
+"value":278,
+"label":"Saint Cloud State University"
+},
+{ 
+"value":279,
+"label":"State University of New York College of Agriculture and Technology at Cobleskill"
+},
+{ 
+"value":280,
+"label":"Central Carolina Community College"
+},
+{ 
+"value":281,
+"label":"Brigham Young University"
+},
+{ 
+"value":282,
+"label":"Faulkner University"
+},
+{ 
+"value":283,
+"label":"California State University-Los Angeles"
+},
+{ 
+"value":284,
+"label":"Brown University"
+},
+{ 
+"value":285,
+"label":"Community College of Baltimore County"
+},
+{ 
+"value":286,
+"label":"West Coast University"
+},
+{ 
+"value":287,
+"label":"Waubonsee Community College-Sugar Grove"
+},
+{ 
+"value":288,
+"label":"Santa Clara University"
+},
+{ 
+"value":289,
+"label":"Hagerstown Community College"
+},
+{ 
+"value":290,
+"label":"Ohio Northern University"
+},
+{ 
+"value":291,
+"label":"Shepherd University"
+},
+{ 
+"value":292,
+"label":"Lakeland College"
+},
+{ 
+"value":293,
+"label":"Winona State University"
+},
+{ 
+"value":294,
+"label":"Le Moyne College"
+},
+{ 
+"value":295,
+"label":"Evergreen Valley College"
+},
+{ 
+"value":296,
+"label":"Pennsylvania State-Hazleton"
+},
+{ 
+"value":297,
+"label":"State University of New York-Albany"
+},
+{ 
+"value":298,
+"label":"Nova Southeastern University"
+},
+{ 
+"value":299,
+"label":"Kansas State University"
+},
+{ 
+"value":300,
+"label":"Gateway Technical College"
+},
+{ 
+"value":301,
+"label":"Schenectady County Community College"
+},
+{ 
+"value":302,
+"label":"HiLCoE School of Computer Science and Technology"
+},
+{ 
+"value":303,
+"label":"Alaska Pacific University"
+},
+{ 
+"value":304,
+"label":"University of Maine-Machias"
+},
+{ 
+"value":305,
+"label":"Arkansas State University-Mountain Home"
+},
+{ 
+"value":306,
+"label":"Wofford College"
+},
+{ 
+"value":307,
+"label":"Concordia College Alabama"
+},
+{ 
+"value":308,
+"label":"University of Maine-Presque Isle"
+},
+{ 
+"value":309,
+"label":"Alaska Bible College"
+},
+{ 
+"value":310,
+"label":"Nicolet College"
+},
+{ 
+"value":311,
+"label":"University of Hawaii-Manoa"
+},
+{ 
+"value":312,
+"label":"Husson University"
+},
+{ 
+"value":313,
+"label":"Joliet Junior College"
+},
+{ 
+"value":314,
+"label":"West Virginia Wesleyan College"
+},
+{ 
+"value":315,
+"label":"Wilkes University"
+},
+{ 
+"value":316,
+"label":"University of Mount Olive"
+},
+{ 
+"value":317,
+"label":"Tuskegee University"
+},
+{ 
+"value":318,
+"label":"Edward Waters College"
+},
+{ 
+"value":319,
+"label":"University of North Dakota-Grand Forks"
+},
+{ 
+"value":320,
+"label":"Washburn University"
+},
+{ 
+"value":321,
+"label":"Texas A&M University-College Station"
+},
+{ 
+"value":322,
+"label":"Moultrie Technical College"
+},
+{ 
+"value":323,
+"label":"Salem State University"
+},
+{ 
+"value":324,
+"label":"Chaminade University"
+},
+{ 
+"value":325,
+"label":"Brigham Young University-Hawaii"
+},
+{ 
+"value":326,
+"label":"Georgia Institute of Technology"
+},
+{ 
+"value":327,
+"label":"University of New Mexico"
+},
+{ 
+"value":328,
+"label":"Henderson State University"
+},
+{ 
+"value":329,
+"label":"Mississippi State University"
+},
+{ 
+"value":330,
+"label":"Tennessee Wesleyan College"
+},
+{ 
+"value":331,
+"label":"Wright State University"
+},
+{ 
+"value":332,
+"label":"Eastern Michigan University"
+},
+{ 
+"value":333,
+"label":"University of Saint Mary"
+},
+{ 
+"value":334,
+"label":"Northern Illinois University"
+},
+{ 
+"value":335,
+"label":"Grand Canyon University"
+},
+{ 
+"value":336,
+"label":"University of Washington-Seattle"
+},
+{ 
+"value":337,
+"label":"Bucknell University"
+},
+{ 
+"value":338,
+"label":"Bridgewater State College"
+},
+{ 
+"value":339,
+"label":"University of Alaska Southeast"
+},
+{ 
+"value":340,
+"label":"Central Michigan University"
+},
+{ 
+"value":341,
+"label":"University of Alaska Fairbanks"
+},
+{ 
+"value":342,
+"label":"Colorado Mesa University"
+},
+{ 
+"value":343,
+"label":"Midlands Technical College"
+},
+{ 
+"value":344,
+"label":"University of Nevada-Las Vegas"
+},
+{ 
+"value":345,
+"label":"North Central College"
+},
+{ 
+"value":346,
+"label":"College of Southern Maryland"
+},
+{ 
+"value":347,
+"label":"University of Wisconsin-Stevens Point"
+},
+{ 
+"value":348,
+"label":"Pikes Peak Community College"
+},
+{ 
+"value":349,
+"label":"Langston University"
+},
+{ 
+"value":350,
+"label":"University of the Incarnate Word"
+},
+{ 
+"value":351,
+"label":"Florida Atlantic University"
+},
+{ 
+"value":352,
+"label":"Edinboro University of Pennsylvania"
+},
+{ 
+"value":353,
+"label":"Tarleton State University"
+},
+{ 
+"value":354,
+"label":"University of Scranton"
+},
+{ 
+"value":355,
+"label":"Indiana Wesleyan University"
+},
+{ 
+"value":356,
+"label":"University of San Diego"
+},
+{ 
+"value":357,
+"label":"Trident University International"
+},
+{ 
+"value":358,
+"label":"Behrend College"
+},
+{ 
+"value":359,
+"label":"Mississippi Valley State University"
+},
+{ 
+"value":360,
+"label":"Central State University"
+},
+{ 
+"value":361,
+"label":"Yale University"
+},
+{ 
+"value":362,
+"label":"University of Saint Joseph (CT)"
+},
+{ 
+"value":363,
+"label":"Kirkwood Community College"
+},
+{ 
+"value":364,
+"label":"Briar Cliff University"
+},
+{ 
+"value":365,
+"label":"Pitt Community College"
+},
+{ 
+"value":366,
+"label":"Albertus Magnus College"
+},
+{ 
+"value":367,
+"label":"Goodwin College"
+},
+{ 
+"value":368,
+"label":"Saint Augustine's College (NC)"
+},
+{ 
+"value":369,
+"label":"Trinity College (CT)"
+},
+{ 
+"value":370,
+"label":"Quinnipiac University"
+},
+{ 
+"value":371,
+"label":"Mitchell College"
+},
+{ 
+"value":372,
+"label":"University of Portland"
+},
+{ 
+"value":373,
+"label":"Lyndon State College"
+},
+{ 
+"value":374,
+"label":"Mesa Community College"
+},
+{ 
+"value":375,
+"label":"Pacific University"
+},
+{ 
+"value":376,
+"label":"NorthWestern Polytechnic University"
+},
+{ 
+"value":377,
+"label":"McMaster University"
+},
+{ 
+"value":378,
+"label":"Glendale Community College"
+},
+{ 
+"value":379,
+"label":"Lone Star College"
+},
+{ 
+"value":380,
+"label":"Arkansas State University-Beebe"
+},
+{ 
+"value":381,
+"label":"University of Maine-Farmington"
+},
+{ 
+"value":382,
+"label":"Saint Joseph's College of Maine"
+},
+{ 
+"value":383,
+"label":"Miles College"
+},
+{ 
+"value":384,
+"label":"Napa Community College"
+},
+{ 
+"value":385,
+"label":"DeAnza College"
+},
+{ 
+"value":386,
+"label":"Catholic University of America"
+},
+{ 
+"value":387,
+"label":"Long Island University"
+},
+{ 
+"value":388,
+"label":"Associated Technical College-San Diego"
+},
+{ 
+"value":389,
+"label":"University of Texas-Tyler"
+},
+{ 
+"value":390,
+"label":"San Diego State University"
+},
+{ 
+"value":391,
+"label":"Weber State University"
+},
+{ 
+"value":392,
+"label":"University of Southern California-Los Angeles"
+},
+{ 
+"value":393,
+"label":"Pennsylvania College of Technology"
+},
+{ 
+"value":394,
+"label":"Capella University"
+},
+{ 
+"value":395,
+"label":"Florida Memorial University"
+},
+{ 
+"value":396,
+"label":"Indiana University Northwest"
+},
+{ 
+"value":397,
+"label":"Fayetteville State University"
+},
+{ 
+"value":398,
+"label":"Ohio State University"
+},
+{ 
+"value":399,
+"label":"Elizabethtown College"
+},
+{ 
+"value":400,
+"label":"Coppin State University"
+},
+{ 
+"value":401,
+"label":"Germanna Community College"
+},
+{ 
+"value":402,
+"label":"Capital University"
+},
+{ 
+"value":403,
+"label":"Baruch College"
+},
+{ 
+"value":404,
+"label":"Colorado School of Mines"
+},
+{ 
+"value":405,
+"label":"Colorado Technical University"
+},
+{ 
+"value":406,
+"label":"Kutztown University of Pennsylvania"
+},
+{ 
+"value":407,
+"label":"Franklin & Marshall College"
+},
+{ 
+"value":408,
+"label":"Dominican University"
+},
+{ 
+"value":409,
+"label":"Charleston Southern University"
+},
+{ 
+"value":410,
+"label":"Blackburn College"
+},
+{ 
+"value":411,
+"label":"Utica College"
+},
+{ 
+"value":412,
+"label":"Western Connecticut State University"
+},
+{ 
+"value":413,
+"label":"North Dakota State University-Fargo"
+},
+{ 
+"value":414,
+"label":"University of Detroit-Mercy"
+},
+{ 
+"value":415,
+"label":"Triton College"
+},
+{ 
+"value":416,
+"label":"McDaniel College"
+},
+{ 
+"value":417,
+"label":"Bowie State University"
+},
+{ 
+"value":418,
+"label":"University of Cape Coast"
+},
+{ 
+"value":419,
+"label":"Colgate University"
+},
+{ 
+"value":420,
+"label":"University of the District of Columbia"
+},
+{ 
+"value":421,
+"label":"University of South Florida-Tampa"
+},
+{ 
+"value":422,
+"label":"Northampton Community College"
+},
+{ 
+"value":423,
+"label":"University of Alaska Anchorage"
+},
+{ 
+"value":424,
+"label":"University of Nevada-Reno"
+},
+{ 
+"value":425,
+"label":"South Carolina State University"
+},
+{ 
+"value":426,
+"label":"University of Michigan-Ann Arbor"
+},
+{ 
+"value":427,
+"label":"Lindenwood University"
+},
+{ 
+"value":428,
+"label":"University Of Mississippi"
+},
+{ 
+"value":429,
+"label":"California Institute of Technology "
+},
+{ 
+"value":430,
+"label":"University of Baltimore"
+},
+{ 
+"value":431,
+"label":"Saddleback Valley College"
+},
+{ 
+"value":432,
+"label":"Central Washington University"
+},
+{ 
+"value":433,
+"label":"University of Northern Iowa"
+},
+{ 
+"value":434,
+"label":"University of Central Florida"
+},
+{ 
+"value":435,
+"label":"Oregon State University"
+},
+{ 
+"value":436,
+"label":"Bethany University"
+},
+{ 
+"value":437,
+"label":"DeSales University"
+},
+{ 
+"value":438,
+"label":"Texas A&M University-Central Texas"
+},
+{ 
+"value":439,
+"label":"Sullivan University"
+},
+{ 
+"value":440,
+"label":"Athens State University"
+},
+{ 
+"value":441,
+"label":"LeTourneau University"
+},
+{ 
+"value":442,
+"label":"University of California-Merced"
+},
+{ 
+"value":443,
+"label":"California State University-Long Beach"
+},
+{ 
+"value":444,
+"label":"St. Johns University"
+},
+{ 
+"value":445,
+"label":"Endicott College"
+},
+{ 
+"value":446,
+"label":"Barry University"
+},
+{ 
+"value":447,
+"label":"University of St. Thomas (MN)"
+},
+{ 
+"value":448,
+"label":"Pennsylvania State University-University Park"
+},
+{ 
+"value":449,
+"label":"Drexel University"
+},
+{ 
+"value":450,
+"label":"Ranken Technical College"
+},
+{ 
+"value":451,
+"label":"Virginia Union University"
+},
+{ 
+"value":452,
+"label":"Northern Kentucky University"
+},
+{ 
+"value":453,
+"label":"Colorado Christian University"
+},
+{ 
+"value":454,
+"label":"Saint Francis College"
+},
+{ 
+"value":455,
+"label":"Clarkson University"
+},
+{ 
+"value":456,
+"label":"Pepperdine University"
+},
+{ 
+"value":457,
+"label":"Randolph-Macon College"
+},
+{ 
+"value":458,
+"label":"Central Methodist University"
+},
+{ 
+"value":459,
+"label":"Northeastern State University"
+},
+{ 
+"value":460,
+"label":"Stony Brook University"
+},
+{ 
+"value":461,
+"label":"Northwestern University"
+},
+{ 
+"value":462,
+"label":"Elon University"
+},
+{ 
+"value":463,
+"label":"Slippery Rock University of Pennsylvania"
+},
+{ 
+"value":464,
+"label":"University of Arkansas-Fayetteville"
+},
+{ 
+"value":465,
+"label":"Southern Polytechnic State University"
+},
+{ 
+"value":466,
+"label":"Hofstra University"
+},
+{ 
+"value":467,
+"label":"Suffolk Community College"
+},
+{ 
+"value":468,
+"label":"West Virginia Institute of Technology"
+},
+{ 
+"value":469,
+"label":"Iowa State University"
+},
+{ 
+"value":470,
+"label":"University of Massachusetts-Boston"
+},
+{ 
+"value":471,
+"label":"University of Louisiana-Lafayette"
+},
+{ 
+"value":472,
+"label":"Morehouse College"
+},
+{ 
+"value":473,
+"label":"University of Utah"
+},
+{ 
+"value":474,
+"label":"Hampton University"
+},
+{ 
+"value":475,
+"label":"Birmingham-Southern College"
+},
+{ 
+"value":476,
+"label":"Florida International University"
+},
+{ 
+"value":477,
+"label":"Technical College of the Lowcountry"
+},
+{ 
+"value":478,
+"label":"Spelman College"
+},
+{ 
+"value":479,
+"label":"Tidewater Community College"
+},
+{ 
+"value":480,
+"label":"Washington College"
+},
+{ 
+"value":481,
+"label":"Maharishi University of Management"
+},
+{ 
+"value":482,
+"label":"University of Missouri-Columbia"
+},
+{ 
+"value":483,
+"label":"University of Minnesota-Twin Cities"
+},
+{ 
+"value":484,
+"label":"Centenary College"
+},
+{ 
+"value":485,
+"label":"West Texas A&M University"
+},
+{ 
+"value":486,
+"label":"University of Wisconsin-Platteville"
+},
+{ 
+"value":487,
+"label":"Rochester Institute of Technology"
+},
+{ 
+"value":488,
+"label":"Lynchburg College"
+},
+{ 
+"value":489,
+"label":"Metropolitan Community College"
+},
+{ 
+"value":490,
+"label":"University of Idaho"
+},
+{ 
+"value":491,
+"label":"Benedict College"
+},
+{ 
+"value":492,
+"label":"Valencia College"
+},
+{ 
+"value":493,
+"label":"Georgia State University"
+},
+{ 
+"value":494,
+"label":"University of Puerto Rico"
+},
+{ 
+"value":495,
+"label":"University of New Haven"
+},
+{ 
+"value":496,
+"label":"Mississippi College"
+},
+{ 
+"value":497,
+"label":"Syracuse University"
+},
+{ 
+"value":498,
+"label":"New Jersey City University"
+},
+{ 
+"value":499,
+"label":"University of North Florida"
+},
+{ 
+"value":500,
+"label":"Southeast Missouri State University"
+},
+{ 
+"value":501,
+"label":"Norfolk State University"
+},
+{ 
+"value":502,
+"label":"Chaffey College"
+},
+{ 
+"value":503,
+"label":"Columbus State Community College (OH)"
+},
+{ 
+"value":504,
+"label":"Colorado State University"
+},
+{ 
+"value":505,
+"label":"Duke University"
+},
+{ 
+"value":506,
+"label":"Three Rivers Community College (CT)"
+},
+{ 
+"value":507,
+"label":"Tacoma Community College"
+},
+{ 
+"value":508,
+"label":"Rhode Island College"
+},
+{ 
+"value":509,
+"label":"DeVry University-Alpharetta"
+},
+{ 
+"value":512,
+"label":"Thomas Edison State College"
+},
+{ 
+"value":513,
+"label":"Davidson College"
+},
+{ 
+"value":514,
+"label":"Oklahoma City University"
+},
+{ 
+"value":515,
+"label":"Westwood College-Inland Empire"
+},
+{ 
+"value":516,
+"label":"DeVry University-Elk Grove (Sacramento)"
+},
+{ 
+"value":517,
+"label":"DeVry University-Sherman Oaks"
+},
+{ 
+"value":518,
+"label":"Sweet Briar College"
+},
+{ 
+"value":519,
+"label":"Southern Virginia University"
+},
+{ 
+"value":520,
+"label":"Westwood College-South Bay"
+},
+{ 
+"value":521,
+"label":"Westwood College-River Oaks"
+},
+{ 
+"value":522,
+"label":"Westwood College-Atlanta Midtown"
+},
+{ 
+"value":524,
+"label":"ITT Technical Institute-Raleigh"
+},
+{ 
+"value":525,
+"label":"University of Nebraska-Kearney"
+},
+{ 
+"value":526,
+"label":"Western Michigan University"
+},
+{ 
+"value":527,
+"label":"Minot State University"
+},
+{ 
+"value":528,
+"label":"Huntingdon College"
+},
+{ 
+"value":529,
+"label":"Loyola University New Orleans"
+},
+{ 
+"value":530,
+"label":"Stillman College"
+},
+{ 
+"value":531,
+"label":"Dallas Baptist University"
+},
+{ 
+"value":532,
+"label":"Dakota Wesleyan University"
+},
+{ 
+"value":533,
+"label":"Samford University"
+},
+{ 
+"value":534,
+"label":"Southern Methodist University"
+},
+{ 
+"value":535,
+"label":"Jackson State University"
+},
+{ 
+"value":536,
+"label":"New Mexico State University"
+},
+{ 
+"value":537,
+"label":"Bronx Community College"
+},
+{ 
+"value":538,
+"label":"Springfield Technical Community College"
+},
+{ 
+"value":539,
+"label":"Nashua Community College"
+},
+{ 
+"value":540,
+"label":"Georgia Perimeter College"
+},
+{ 
+"value":541,
+"label":"Liberty University"
+},
+{ 
+"value":542,
+"label":"University of Southern Mississippi"
+},
+{ 
+"value":543,
+"label":"Georgia Southern University"
+},
+{ 
+"value":544,
+"label":"University of Kansas"
+},
+{ 
+"value":545,
+"label":"Texas Tech University"
+},
+{ 
+"value":546,
+"label":"Siena College"
+},
+{ 
+"value":547,
+"label":"Tarrant County College"
+},
+{ 
+"value":548,
+"label":"Saint Vincent College"
+},
+{ 
+"value":549,
+"label":"Rollins College"
+},
+{ 
+"value":550,
+"label":"Capitol Technology University"
+},
+{ 
+"value":551,
+"label":"West Virginia State University"
+},
+{ 
+"value":552,
+"label":"University of California-Los Angeles"
+},
+{ 
+"value":553,
+"label":"University of Houston"
+},
+{ 
+"value":554,
+"label":"Universidad Del Este Carolina (Puerto Rico)"
+},
+{ 
+"value":555,
+"label":"Empire State College"
+},
+{ 
+"value":556,
+"label":"Neumont University"
+},
+{ 
+"value":557,
+"label":"Bacone College"
+},
+{ 
+"value":558,
+"label":"Savannah State University"
+},
+{ 
+"value":559,
+"label":"Oklahoma Panhandle State University"
+},
+{ 
+"value":560,
+"label":"Grambling State University"
+},
+{ 
+"value":561,
+"label":"Wheeling Jesuit University"
+},
+{ 
+"value":562,
+"label":"Eastern Connecticut State University"
+},
+{ 
+"value":563,
+"label":"New Mexico State University [USE OTHER ENTRY]"
+},
+{ 
+"value":564,
+"label":"Cameron University"
+},
+{ 
+"value":565,
+"label":"Indiana University of Pennsylvania"
+},
+{ 
+"value":566,
+"label":"Gannon University"
+},
+{ 
+"value":567,
+"label":"Virginia International University"
+},
+{ 
+"value":568,
+"label":"Manhattanville College"
+},
+{ 
+"value":569,
+"label":"Henry Ford Community College"
+},
+{ 
+"value":570,
+"label":"Framingham State University"
+},
+{ 
+"value":571,
+"label":"Rensselaer Polytechnic Institute"
+},
+{ 
+"value":572,
+"label":"Morningside College"
+},
+{ 
+"value":573,
+"label":"Davenport University"
+},
+{ 
+"value":574,
+"label":"Mercer University"
+},
+{ 
+"value":575,
+"label":"East Stroudsburg University of Pennsylvania"
+},
+{ 
+"value":576,
+"label":"San Francisco State University"
+},
+{ 
+"value":577,
+"label":"University of Maryland-Eastern Shore"
+},
+{ 
+"value":578,
+"label":"Hood College"
+},
+{ 
+"value":579,
+"label":"Wesley College"
+},
+{ 
+"value":580,
+"label":"University of New Hampshire"
+},
+{ 
+"value":581,
+"label":"University of Wyoming"
+},
+{ 
+"value":582,
+"label":"Coastal Pines Technical College"
+},
+{ 
+"value":583,
+"label":"Lebanon Valley College"
+},
+{ 
+"value":584,
+"label":"State University of New York-Buffalo"
+},
+{ 
+"value":585,
+"label":"Rowan-Cabarrus Community College"
+},
+{ 
+"value":586,
+"label":"Widener University"
+},
+{ 
+"value":587,
+"label":"Cheyney University of Pennsylvania"
+},
+{ 
+"value":588,
+"label":"Macalester College"
+},
+{ 
+"value":589,
+"label":"University of Central Missouri"
+},
+{ 
+"value":590,
+"label":"Rutgers University"
+},
+{ 
+"value":591,
+"label":"Ferris State University"
+},
+{ 
+"value":592,
+"label":"Pace University"
+},
+{ 
+"value":593,
+"label":"University of Illinois-Urbana-Champaign"
+},
+{ 
+"value":594,
+"label":"Washington and Lee University"
+},
+{ 
+"value":595,
+"label":"Marshall University"
+},
+{ 
+"value":596,
+"label":"Wilmington University"
+},
+{ 
+"value":597,
+"label":"Sam Houston State University"
+},
+{ 
+"value":598,
+"label":"Newman University"
+},
+{ 
+"value":599,
+"label":"University of Kentucky"
+},
+{ 
+"value":600,
+"label":"Bridgewater College"
+},
+{ 
+"value":601,
+"label":"Marywood University"
+},
+{ 
+"value":602,
+"label":"Bloomsburg University of Pennsylvania"
+},
+{ 
+"value":603,
+"label":"Muhlenberg College"
+},
+{ 
+"value":604,
+"label":"Longwood University"
+},
+{ 
+"value":605,
+"label":"St. Mary's College of Maryland"
+},
+{ 
+"value":606,
+"label":"Florida Polytechnic University"
+},
+{ 
+"value":608,
+"label":"Thaddeus Stevens College of Technology"
+},
+{ 
+"value":609,
+"label":"Harrisburg University of Science and Technology"
+},
+{ 
+"value":610,
+"label":"Cedar Crest College"
+},
+{ 
+"value":611,
+"label":"University of California-Irvine"
+},
+{ 
+"value":612,
+"label":"Shaw University"
+},
+{ 
+"value":613,
+"label":"University of Bridgeport"
+},
+{ 
+"value":614,
+"label":"Hartwick College"
+},
+{ 
+"value":615,
+"label":"Miami Dade College"
+},
+{ 
+"value":616,
+"label":"West Chester University of Pennsylvania"
+},
+{ 
+"value":617,
+"label":"Bluefield State College"
+},
+{ 
+"value":618,
+"label":"Greensboro College"
+},
+{ 
+"value":619,
+"label":"Shenandoah University"
+},
+{ 
+"value":620,
+"label":"Herzing University"
+},
+{ 
+"value":621,
+"label":"Delaware State University"
+},
+{ 
+"value":622,
+"label":"Wilberforce University"
+},
+{ 
+"value":623,
+"label":"Jacksonville University"
+},
+{ 
+"value":624,
+"label":"Golden Gate University"
+},
+{ 
+"value":625,
+"label":"Lake Washington Institute of Technology"
+},
+{ 
+"value":626,
+"label":"Kalamazoo Valley Community College"
+},
+{ 
+"value":627,
+"label":"John F. Kennedy University"
+},
+{ 
+"value":628,
+"label":"Dakota State University"
+},
+{ 
+"value":629,
+"label":"Hudson County College (NJ)"
+},
+{ 
+"value":630,
+"label":"Goucher College"
+},
+{ 
+"value":631,
+"label":"Minnesota State University"
+},
+{ 
+"value":632,
+"label":"University of Wisconsin-River Falls"
+},
+{ 
+"value":633,
+"label":"Spokane Community College"
+},
+{ 
+"value":634,
+"label":"Pine Technical College"
+},
+{ 
+"value":635,
+"label":"California Polytechnic State University-San Luis Obispo"
+},
+{ 
+"value":636,
+"label":"Ferrum College"
+},
+{ 
+"value":637,
+"label":"University of Washington-Bothell"
+},
+{ 
+"value":638,
+"label":"Morgan State University"
+},
+{ 
+"value":639,
+"label":"Hollins University"
+},
+{ 
+"value":640,
+"label":"Mount St. Mary's University (MD)"
+},
+{ 
+"value":641,
+"label":"Ivy Tech Community College"
+},
+{ 
+"value":642,
+"label":"University of Mary Washington"
+},
+{ 
+"value":643,
+"label":"Johnson & Wales University"
+},
+{ 
+"value":644,
+"label":"St. John's College-Annapolis"
+},
+{ 
+"value":645,
+"label":"Fairmont State University"
+},
+{ 
+"value":646,
+"label":"Bluefield College"
+},
+{ 
+"value":647,
+"label":"Florida A&M University"
+},
+{ 
+"value":648,
+"label":"High Point University"
+},
+{ 
+"value":649,
+"label":"Keene State College"
+},
+{ 
+"value":650,
+"label":"Mary Baldwin College"
+},
+{ 
+"value":651,
+"label":"Virginia Wesleyan College"
+},
+{ 
+"value":652,
+"label":"Hampden-Sydney College"
+},
+{ 
+"value":653,
+"label":"University of Richmond"
+},
+{ 
+"value":654,
+"label":"Glenville State College"
+},
+{ 
+"value":655,
+"label":"Concord University"
+},
+{ 
+"value":656,
+"label":"Stevens Henager College"
+},
+{ 
+"value":657,
+"label":"Emory and Henry College"
+},
+{ 
+"value":658,
+"label":"New College of Florida"
+},
+{ 
+"value":659,
+"label":"East Carolina University"
+},
+{ 
+"value":660,
+"label":"Southwest Virginia Community College"
+},
+{ 
+"value":661,
+"label":"Goldey–Beacom College"
+},
+{ 
+"value":662,
+"label":"Limestone College"
+},
+{ 
+"value":663,
+"label":"Middlesex County College (NJ)"
+},
+{ 
+"value":664,
+"label":"Idaho State University"
+},
+{ 
+"value":665,
+"label":"University of Rhode Island"
+},
+{ 
+"value":666,
+"label":"North Carolina State University"
+},
+{ 
+"value":667,
+"label":"Pittsburgh Technical Institute"
+},
+{ 
+"value":668,
+"label":"Penn Foster College"
+},
+{ 
+"value":669,
+"label":"Loyola University Maryland"
+},
+{ 
+"value":670,
+"label":"Bethune-Cookman University"
+},
+{ 
+"value":671,
+"label":"University of San Francisco"
+},
+{ 
+"value":672,
+"label":"Wentworth Institute of Technology"
+},
+{ 
+"value":673,
+"label":"Duquesne University of the Holy Spirit"
+},
+{ 
+"value":674,
+"label":"Central Carolina Technical College"
+},
+{ 
+"value":675,
+"label":"Milwaukee School of Engineering"
+},
+{ 
+"value":676,
+"label":"Shoreline Community College"
+},
+{ 
+"value":677,
+"label":"Austin Community College"
+},
+{ 
+"value":678,
+"label":"Gwinnett Technical College"
+},
+{ 
+"value":679,
+"label":"Northeastern University"
+},
+{ 
+"value":680,
+"label":"State University of New York"
+},
+{ 
+"value":681,
+"label":"Rice University"
+},
+{ 
+"value":682,
+"label":"University of Wisconsin-Parkside"
+},
+{ 
+"value":683,
+"label":"University of Washington-Tacoma"
+},
+{ 
+"value":684,
+"label":"Saint Martin's University"
+},
+{ 
+"value":685,
+"label":"Clark Atlanta University"
+},
+{ 
+"value":686,
+"label":"University of Vermont"
+},
+{ 
+"value":687,
+"label":"Interface College-Spokane"
+},
+{ 
+"value":688,
+"label":"Manchester College"
+},
+{ 
+"value":689,
+"label":"Ball State University"
+},
+{ 
+"value":690,
+"label":"Clarion University of Pennsylvania"
+},
+{ 
+"value":691,
+"label":"Oklahoma State University"
+},
+{ 
+"value":692,
+"label":"University of Wisconsin-Fond du Lac"
+},
+{ 
+"value":693,
+"label":"Carnegie Mellon University"
+},
+{ 
+"value":694,
+"label":"Saint Leo University"
+},
+{ 
+"value":695,
+"label":"Northern Arizona University"
+},
+{ 
+"value":696,
+"label":"Susquehanna University"
+},
+{ 
+"value":697,
+"label":"University of California-Davis"
+},
+{ 
+"value":698,
+"label":"Michigan State University"
+},
+{ 
+"value":699,
+"label":"Malone University"
+},
+{ 
+"value":700,
+"label":"Oakland University"
+},
+{ 
+"value":701,
+"label":"St. Joseph's College-Brooklyn"
+},
+{ 
+"value":702,
+"label":"Chattahoochee Technical College"
+},
+{ 
+"value":703,
+"label":"Ithaca College"
+},
+{ 
+"value":704,
+"label":"University of California-Santa Barbara"
+},
+{ 
+"value":705,
+"label":"University of Wisconsin-Superior"
+},
+{ 
+"value":706,
+"label":"Elizabeth City State University"
+},
+{ 
+"value":707,
+"label":"Virginia State University"
+},
+{ 
+"value":708,
+"label":"Lawrence University"
+},
+{ 
+"value":709,
+"label":"Washington State University-Spokane"
+},
+{ 
+"value":710,
+"label":"Western Illinois University"
+},
+{ 
+"value":711,
+"label":"Manhattan College"
+},
+{ 
+"value":712,
+"label":"Boise State University"
+},
+{ 
+"value":713,
+"label":"University of Memphis"
+},
+{ 
+"value":714,
+"label":"Walden University"
+},
+{ 
+"value":715,
+"label":"Lincoln College of Technology"
+},
+{ 
+"value":716,
+"label":"Interamerican University of Puerto Rico"
+},
+{ 
+"value":717,
+"label":"Middlesex Community College (MA)"
+},
+{ 
+"value":718,
+"label":"Baker College"
+},
+{ 
+"value":719,
+"label":"Chadron State College"
+},
+{ 
+"value":720,
+"label":"Southern Connecticut State University"
+},
+{ 
+"value":721,
+"label":"University of California-Riverside"
+},
+{ 
+"value":722,
+"label":"Merrimack College"
+},
+{ 
+"value":723,
+"label":"University of Minnesota-Duluth"
+},
+{ 
+"value":724,
+"label":"Wheaton College (IL)"
+},
+{ 
+"value":725,
+"label":"Bemidji State University"
+},
+{ 
+"value":726,
+"label":"Louisiana State University-Baton Rouge"
+},
+{ 
+"value":727,
+"label":"Missouri University of Science and Technology"
+},
+{ 
+"value":728,
+"label":"Huntington University"
+},
+{ 
+"value":729,
+"label":"Houston Community College"
+},
+{ 
+"value":730,
+"label":"Westminster College"
+},
+{ 
+"value":731,
+"label":"University of North Alabama"
+},
+{ 
+"value":732,
+"label":"University of Toledo"
+},
+{ 
+"value":733,
+"label":"Onondaga Community College"
+},
+{ 
+"value":734,
+"label":"Humboldt State University"
+},
+{ 
+"value":735,
+"label":"Blackhawk Technical College"
+},
+{ 
+"value":736,
+"label":"Columbia College (MO)"
+},
+{ 
+"value":737,
+"label":"Southern New Hampshire University"
+},
+{ 
+"value":738,
+"label":"University of Arizona"
+},
+{ 
+"value":739,
+"label":"Western Washington University"
+},
+{ 
+"value":740,
+"label":"Clark University"
+},
+{ 
+"value":741,
+"label":"Southwestern Illinois College"
+},
+{ 
+"value":742,
+"label":"University of Texas-Austin"
+},
+{ 
+"value":743,
+"label":"University of Alabama in Huntsville"
+},
+{ 
+"value":744,
+"label":"Webster University"
+},
+{ 
+"value":745,
+"label":"Rock Valley College (IL)"
+},
+{ 
+"value":746,
+"label":"University of Oregon"
+},
+{ 
+"value":747,
+"label":"Azusa Pacific University"
+},
+{ 
+"value":748,
+"label":"Macomb Community College"
+},
+{ 
+"value":749,
+"label":"Bentley University"
+},
+{ 
+"value":750,
+"label":"California State University-Chico"
+},
+{ 
+"value":751,
+"label":"Pima Community College"
+},
+{ 
+"value":752,
+"label":"Medgar Evers College"
+},
+{ 
+"value":753,
+"label":"DePauw University"
+},
+{ 
+"value":754,
+"label":"Tufts University"
+},
+{ 
+"value":755,
+"label":"Binghamton University"
+},
+{ 
+"value":756,
+"label":"Farmingdale State College"
+},
+{ 
+"value":757,
+"label":"Seattle University"
+},
+{ 
+"value":758,
+"label":"Livingstone College"
+},
+{ 
+"value":759,
+"label":"Gonzaga University"
+},
+{ 
+"value":760,
+"label":"Norwalk Community College"
+},
+{ 
+"value":761,
+"label":"Furman University"
+},
+{ 
+"value":762,
+"label":"Lane College"
+},
+{ 
+"value":763,
+"label":"Winston-Salem State University"
+},
+{ 
+"value":764,
+"label":"Austin Peay State University"
+},
+{ 
+"value":765,
+"label":"Briarcliffe College"
+},
+{ 
+"value":766,
+"label":"Hawaii Pacific University"
+},
+{ 
+"value":767,
+"label":"Kennesaw State University"
+},
+{ 
+"value":768,
+"label":"Rowan University"
+},
+{ 
+"value":769,
+"label":"Taylor University"
+},
+{ 
+"value":770,
+"label":"IUPUI"
+},
+{ 
+"value":771,
+"label":"University of Wisconsin-Stout"
+},
+{ 
+"value":772,
+"label":"San Jose State University"
+},
+{ 
+"value":773,
+"label":"Faith Seminary"
+},
+{ 
+"value":774,
+"label":"Vincennes University"
+},
+{ 
+"value":775,
+"label":"Miami University (OH)"
+},
+{ 
+"value":776,
+"label":"Eastern Kentucky University"
+},
+{ 
+"value":777,
+"label":"Augsburg College"
+},
+{ 
+"value":778,
+"label":"Sanford Brown College-Mendota Heights"
+},
+{ 
+"value":779,
+"label":"Queens College of the City University of New York"
+},
+{ 
+"value":780,
+"label":"Franciscan University"
+},
+{ 
+"value":781,
+"label":"Pensacola Christian College"
+},
+{ 
+"value":782,
+"label":"Central New Mexico Community College"
+},
+{ 
+"value":783,
+"label":"Stark State College"
+},
+{ 
+"value":784,
+"label":"Ursinus College"
+},
+{ 
+"value":785,
+"label":"Eastern Oregon University"
+},
+{ 
+"value":786,
+"label":"Colby Sawyer College"
+},
+{ 
+"value":787,
+"label":"San Antonio College"
+},
+{ 
+"value":788,
+"label":"Rider University"
+},
+{ 
+"value":789,
+"label":"Westwood College-Denver [DUPLICATE-PICK SPECIFIC DENVER CAMPUS]"
+},
+{ 
+"value":790,
+"label":"Des Moines Area Community College"
+},
+{ 
+"value":791,
+"label":"D'Youville College"
+},
+{ 
+"value":792,
+"label":"Missouri Southern State University"
+},
+{ 
+"value":793,
+"label":"Orange Coast College"
+},
+{ 
+"value":794,
+"label":"Missouri Western State University"
+},
+{ 
+"value":795,
+"label":"Grand Valley State University"
+},
+{ 
+"value":796,
+"label":"Edison Community College (OH)"
+},
+{ 
+"value":797,
+"label":"DeVry University-Westminster (Denver North)"
+},
+{ 
+"value":798,
+"label":"South Dakota School of Mines & Technology"
+},
+{ 
+"value":799,
+"label":"Harding University"
+},
+{ 
+"value":800,
+"label":"Stratford University-Newport News (Oyster Point)"
+},
+{ 
+"value":801,
+"label":"Stratford University-Richmond (Glen Allen)"
+},
+{ 
+"value":802,
+"label":"ITT Technical Institute-Greenville (SC)"
+},
+{ 
+"value":804,
+"label":"ITT Technical Institute-North Charleston (SC)"
+},
+{ 
+"value":805,
+"label":"University of Minnesota-Morris"
+},
+{ 
+"value":806,
+"label":"Hampshire College"
+},
+{ 
+"value":807,
+"label":"Bellevue College"
+},
+{ 
+"value":808,
+"label":"Massachusetts College of Liberal Arts"
+},
+{ 
+"value":809,
+"label":"Owens Community College"
+},
+{ 
+"value":810,
+"label":"Millstream Career Technical Center"
+},
+{ 
+"value":811,
+"label":"Texas State Technical College"
+},
+{ 
+"value":812,
+"label":"Northern Michigan University"
+},
+{ 
+"value":813,
+"label":"Utah State University"
+},
+{ 
+"value":814,
+"label":"A.W. Beattie Technical School"
+},
+{ 
+"value":815,
+"label":"Principia College"
+},
+{ 
+"value":816,
+"label":"New England Institute of Technology"
+},
+{ 
+"value":817,
+"label":"Northwest State Community College"
+},
+{ 
+"value":818,
+"label":"University of Pennsylvania"
+},
+{ 
+"value":819,
+"label":"Southern Illinois University-Edwardsville"
+},
+{ 
+"value":821,
+"label":"Shawnee State University"
+},
+{ 
+"value":822,
+"label":"Pennsylvania State University-New Kensington"
+},
+{ 
+"value":823,
+"label":"Westfield State University"
+},
+{ 
+"value":824,
+"label":"Drake University"
+},
+{ 
+"value":825,
+"label":"Washington Adventist University"
+},
+{ 
+"value":826,
+"label":"Florida Metropolitan University"
+},
+{ 
+"value":827,
+"label":"University of Notre Dame"
+},
+{ 
+"value":828,
+"label":"Temple University"
+},
+{ 
+"value":829,
+"label":"Salt Lake Community College"
+},
+{ 
+"value":830,
+"label":"Southern Technical College"
+},
+{ 
+"value":831,
+"label":"Delgado Community College"
+},
+{ 
+"value":832,
+"label":"Pinellas Technical College (FL)"
+},
+{ 
+"value":833,
+"label":"Saint Ambrose University"
+},
+{ 
+"value":834,
+"label":"Case Western Reserve University"
+},
+{ 
+"value":835,
+"label":"Southern Wesleyan University"
+},
+{ 
+"value":836,
+"label":"Lenoir Rhyne University"
+},
+{ 
+"value":837,
+"label":"University of Akron"
+},
+{ 
+"value":838,
+"label":"Jones International University"
+},
+{ 
+"value":839,
+"label":"University of Texas-Brownsville"
+},
+{ 
+"value":840,
+"label":"Western New England University"
+},
+{ 
+"value":841,
+"label":"Brandeis University"
+},
+{ 
+"value":842,
+"label":"Dixie State University"
+},
+{ 
+"value":843,
+"label":"Virginia Highlands Community College"
+},
+{ 
+"value":844,
+"label":"Benedictine University"
+},
+{ 
+"value":845,
+"label":"University of Minnesota-Rochester"
+},
+{ 
+"value":846,
+"label":"Loyola Marymount University"
+},
+{ 
+"value":847,
+"label":"DeVry University-Phoenix"
+},
+{ 
+"value":848,
+"label":"Pennsylvania State University-Harrisburg"
+},
+{ 
+"value":849,
+"label":"Columbia University"
+},
+{ 
+"value":850,
+"label":"Stratford University-Virginia Beach"
+},
+{ 
+"value":851,
+"label":"DeVry University-Pomona"
+},
+{ 
+"value":852,
+"label":"ITT Technical Institute-High Point"
+},
+{ 
+"value":853,
+"label":"ITT Technical Institute-Norfolk"
+},
+{ 
+"value":854,
+"label":"Westwood College-Chicago Loop"
+},
+{ 
+"value":855,
+"label":"Dowling College"
+},
+{ 
+"value":856,
+"label":"Westwood College-Atlanta Northlake"
+},
+{ 
+"value":857,
+"label":"Erskine College"
+},
+{ 
+"value":858,
+"label":"Blinn College-Brenham Campus"
+},
+{ 
+"value":860,
+"label":"DeVry University-Jacksonville"
+},
+{ 
+"value":861,
+"label":"DeVry University-Long Beach"
+},
+{ 
+"value":862,
+"label":"DeVry University-Colorado Springs Center"
+},
+{ 
+"value":863,
+"label":"ITT Technical Institute-Charlotte North"
+},
+{ 
+"value":864,
+"label":"Keiser University"
+},
+{ 
+"value":865,
+"label":"Guilford College"
+},
+{ 
+"value":866,
+"label":"DeVry University-Tampa Bay Campus"
+},
+{ 
+"value":867,
+"label":"DigiPen Institute of Technology"
+},
+{ 
+"value":868,
+"label":"ITT Technical Institute-Charlotte South"
+},
+{ 
+"value":869,
+"label":"ITT Technical Institute-Huntington (WV)"
+},
+{ 
+"value":870,
+"label":"University of Houston–Victoria"
+},
+{ 
+"value":871,
+"label":"Westwood College-Denver North"
+},
+{ 
+"value":872,
+"label":"DeVry University-Palmdale"
+},
+{ 
+"value":873,
+"label":"Westwood College-DuPage"
+},
+{ 
+"value":874,
+"label":"DeVry University-Glendale"
+},
+{ 
+"value":875,
+"label":"DeVry University-Orlando"
+},
+{ 
+"value":876,
+"label":"Stratford University-Baltimore (Inner Harbor)"
+},
+{ 
+"value":877,
+"label":"Richard Stockton College"
+},
+{ 
+"value":878,
+"label":"Westwood College-Denver South"
+},
+{ 
+"value":879,
+"label":"South Hills School of Business and Technology"
+},
+{ 
+"value":881,
+"label":"University of Pikeville"
+},
+{ 
+"value":882,
+"label":"Connecticut College"
+},
+{ 
+"value":883,
+"label":"Leeward Community College"
+},
+{ 
+"value":884,
+"label":"Pomona College"
+},
+{ 
+"value":885,
+"label":"DeVry University-Oxnard Center"
+},
+{ 
+"value":886,
+"label":"DeVry University-Tampa East Center"
+},
+{ 
+"value":887,
+"label":"ITT Technical Institute-Roanoke/Salem (VA)"
+},
+{ 
+"value":888,
+"label":"ITT Technical Institute-Marlton (NJ)"
+},
+{ 
+"value":889,
+"label":"Sowela Technical Community College"
+},
+{ 
+"value":890,
+"label":"The Citadel"
+},
+{ 
+"value":891,
+"label":"North Lake College"
+},
+{ 
+"value":892,
+"label":"DeVry University-Duluth Center"
+},
+{ 
+"value":893,
+"label":"Stratford University-Woodbridge (VA)"
+},
+{ 
+"value":894,
+"label":"DeVry University-Cobb Galleria Center"
+},
+{ 
+"value":895,
+"label":"Stratford University-New Dehli (India)"
+},
+{ 
+"value":896,
+"label":"University of Tennessee-Chattanooga"
+},
+{ 
+"value":897,
+"label":"University of West Alabama"
+},
+{ 
+"value":898,
+"label":"DeVry University-Miramar (West) Campus"
+},
+{ 
+"value":899,
+"label":"DeVry University-Oakland Center"
+},
+{ 
+"value":900,
+"label":"Auburn University at Montgomery"
+},
+{ 
+"value":901,
+"label":"ITT Technical Institute-Durham"
+},
+{ 
+"value":902,
+"label":"DeVry University-Bakersfield Center"
+},
+{ 
+"value":903,
+"label":"DeVry University-Fremont"
+},
+{ 
+"value":905,
+"label":"DeVry University-Mesa Center"
+},
+{ 
+"value":906,
+"label":"Stratford University-Online"
+},
+{ 
+"value":907,
+"label":"Lake Forest College"
+},
+{ 
+"value":908,
+"label":"Bryan College"
+},
+{ 
+"value":909,
+"label":"University of Cincinnati"
+},
+{ 
+"value":910,
+"label":"DeVry University-Greenwood Village (Denver South)"
+},
+{ 
+"value":911,
+"label":"Elms College"
+},
+{ 
+"value":912,
+"label":"New River Community College"
+},
+{ 
+"value":913,
+"label":"California State University-East Bay"
+},
+{ 
+"value":914,
+"label":"Fredonia State University"
+},
+{ 
+"value":915,
+"label":"University of North Georgia"
+},
+{ 
+"value":916,
+"label":"Westwood College-O'Hare Airport"
+},
+{ 
+"value":917,
+"label":"University of Minnesota-Crookston"
+},
+{ 
+"value":918,
+"label":"Stratford University-Alexandria VA"
+},
+{ 
+"value":919,
+"label":"Emory University"
+},
+{ 
+"value":920,
+"label":"Butler County Community College (PA)"
+},
+{ 
+"value":921,
+"label":"Thomas College"
+},
+{ 
+"value":922,
+"label":"Westwood College-Anaheim"
+},
+{ 
+"value":923,
+"label":"DeVry University-San Diego"
+},
+{ 
+"value":924,
+"label":"DeVry University-Stockbridge (Henry County) Center"
+},
+{ 
+"value":925,
+"label":"ITT Technical Institute-Myrtle Beach (SC)"
+},
+{ 
+"value":926,
+"label":"Westmont College"
+},
+{ 
+"value":927,
+"label":"Polytechnic Institute of New York University"
+},
+{ 
+"value":928,
+"label":"Alvernia University"
+},
+{ 
+"value":929,
+"label":"DeVry University-San Jose"
+},
+{ 
+"value":930,
+"label":"DeVry University-Anaheim Center"
+},
+{ 
+"value":931,
+"label":"ITT Technical Institute-Baltimore"
+},
+{ 
+"value":932,
+"label":"Indiana State University"
+},
+{ 
+"value":934,
+"label":"ITT Technical Institute-Columbia (SC)"
+},
+{ 
+"value":935,
+"label":"American Advanced Institute of Technology"
+},
+{ 
+"value":936,
+"label":"Fairleigh Dickinson University"
+},
+{ 
+"value":937,
+"label":"DeVry University-Dale City"
+},
+{ 
+"value":938,
+"label":"Patrick Henry Community College"
+},
+{ 
+"value":939,
+"label":"Francis Marion University"
+},
+{ 
+"value":940,
+"label":"Fordham University"
+},
+{ 
+"value":941,
+"label":"DeVry University-Colton (Inland Empire)"
+},
+{ 
+"value":942,
+"label":"Rose-Hulman Institute of Technology"
+},
+{ 
+"value":943,
+"label":"California Lutheran University"
+},
+{ 
+"value":944,
+"label":"Washington State Community College (OH)"
+},
+{ 
+"value":945,
+"label":"St. Petersburg College"
+},
+{ 
+"value":946,
+"label":"Whittier College"
+},
+{ 
+"value":947,
+"label":"University of Colorado-Denver"
+},
+{ 
+"value":948,
+"label":"Jacksonville State University"
+},
+{ 
+"value":949,
+"label":"Middle Tennessee State University"
+},
+{ 
+"value":950,
+"label":"Dabney S. Lancaster Community College"
+},
+{ 
+"value":951,
+"label":"Southern Adventist University"
+},
+{ 
+"value":952,
+"label":"College of Southern Nevada"
+},
+{ 
+"value":953,
+"label":"York College of Pennsylvania"
+},
+{ 
+"value":954,
+"label":"Neumann University"
+},
+{ 
+"value":955,
+"label":"Georgetown University"
+},
+{ 
+"value":956,
+"label":"University of Alabama at Birmingham"
+},
+{ 
+"value":957,
+"label":"Southeastern University"
+},
+{ 
+"value":958,
+"label":"Northeastern Wisconsin Technical College"
+},
+{ 
+"value":959,
+"label":"Fullerton College"
+},
+{ 
+"value":960,
+"label":"John Carroll University"
+},
+{ 
+"value":961,
+"label":"Arcadia University"
+},
+{ 
+"value":962,
+"label":"California State University-Northridge"
+},
+{ 
+"value":963,
+"label":"Bristol Community College"
+},
+{ 
+"value":964,
+"label":"Illinois State University"
+},
+{ 
+"value":965,
+"label":"University of Denver"
+},
+{ 
+"value":966,
+"label":"Valparaiso University"
+},
+{ 
+"value":967,
+"label":"University of Sioux Falls"
+},
+{ 
+"value":968,
+"label":"Robert Morris University"
+},
+{ 
+"value":969,
+"label":"Saint Bonaventure University"
+},
+{ 
+"value":971,
+"label":"Austin College"
+},
+{ 
+"value":972,
+"label":"State Fair Community College"
+},
+{ 
+"value":973,
+"label":"University of California-San Diego"
+},
+{ 
+"value":974,
+"label":"Hope College"
+},
+{ 
+"value":975,
+"label":"Central Ohio Technical College"
+},
+{ 
+"value":976,
+"label":"Bowling Green Technical"
+},
+{ 
+"value":977,
+"label":"Bowling Green State University"
+},
+{ 
+"value":978,
+"label":"University of Tennessee-Knoxville"
+},
+{ 
+"value":979,
+"label":"Community College of Philadelphia"
+},
+{ 
+"value":980,
+"label":"Howard University"
+},
+{ 
+"value":981,
+"label":"Georgia Highlands College"
+},
+{ 
+"value":982,
+"label":"Oregon Institute of Technology"
+},
+{ 
+"value":983,
+"label":"University of Missouri-St. Louis"
+},
+{ 
+"value":984,
+"label":"Saint Joseph's College (IN)"
+},
+{ 
+"value":985,
+"label":"Eastern Florida State College"
+},
+{ 
+"value":986,
+"label":"Mary Grove College"
+},
+{ 
+"value":987,
+"label":"Brown Mackie College"
+},
+{ 
+"value":989,
+"label":"Lehman College"
+},
+{ 
+"value":990,
+"label":"North Greenville University"
+},
+{ 
+"value":991,
+"label":"Southern University-Shreveport"
+},
+{ 
+"value":992,
+"label":"Edgewood College"
+},
+{ 
+"value":993,
+"label":"University of North Carolina-Greensboro"
+},
+{ 
+"value":994,
+"label":"City University of Seattle"
+},
+{ 
+"value":995,
+"label":"University of Massachusetts-Amherst"
+},
+{ 
+"value":996,
+"label":"State University of New York-Institute of Technology"
+},
+{ 
+"value":997,
+"label":"Harvard University"
+},
+{ 
+"value":998,
+"label":"University of Tampa"
+},
+{ 
+"value":999,
+"label":"Troy University"
+},
+{ 
+"value":1000,
+"label":"La Salle University"
+},
+{ 
+"value":1001,
+"label":"State University of New York-Plattsburgh"
+},
+{ 
+"value":1002,
+"label":"Wake Technical Community College"
+},
+{ 
+"value":1003,
+"label":"Worcester Polytechnic Institute"
+},
+{ 
+"value":1004,
+"label":"Walters State Community College"
+},
+{ 
+"value":1005,
+"label":"University of Montana"
+},
+{ 
+"value":1006,
+"label":"California Baptist University"
+},
+{ 
+"value":1007,
+"label":"Palomar College"
+},
+{ 
+"value":1008,
+"label":"Tesst College of Technology"
+},
+{ 
+"value":1009,
+"label":"Arizona State University-West"
+},
+{ 
+"value":1010,
+"label":"Ohio University"
+},
+{ 
+"value":1011,
+"label":"State University of New York-Oswego"
+},
+{ 
+"value":1012,
+"label":"Madison Area Technical College"
+},
+{ 
+"value":1013,
+"label":"Boston College"
+}]

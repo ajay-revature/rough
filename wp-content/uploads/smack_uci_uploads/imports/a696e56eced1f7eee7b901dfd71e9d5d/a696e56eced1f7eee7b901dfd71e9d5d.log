@@ -1,0 +1,9 @@
+ File has been used for this event: job_demo.csv - job_demo.csv.csv
+ Type of the imported file: csv
+ Revision of the which is used: 1
+ Mode of event: Insert
+ Total no of records: 2
+ Rows handled on each iterations (Based on your server configuration): 1
+ File used to import data into: post (Posts)
+[2017-06-12 15:53:05] Message: Inserted post ID: 989,  Status: publish  Click here to verify - Web View | Admin View 
+[2017-06-12 15:53:11] Message: Inserted post ID: 990,  Status: publish  Click here to verify - Web View | Admin View 
